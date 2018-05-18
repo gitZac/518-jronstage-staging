@@ -1,0 +1,9 @@
+[02-Apr-2018 12:43:21 America/New_York] PHP Fatal error:  Call to undefined function get_header() in /home/jronywfo/public_html/wp-content/themes/JRonstage-golive032918/index.php on line 1
+[02-Apr-2018 19:36:38 America/New_York] PHP Fatal error:  Call to undefined function get_header() in /home/jronywfo/public_html/wp-content/themes/JRonstage-golive032918/index.php on line 1
+[03-Apr-2018 01:59:59 America/New_York] PHP Fatal error:  Call to undefined function get_header() in /home/jronywfo/public_html/wp-content/themes/JRonstage-golive032918/index.php on line 1
+[03-Apr-2018 07:59:54 America/New_York] PHP Fatal error:  Call to undefined function get_header() in /home/jronywfo/public_html/wp-content/themes/JRonstage-golive032918/index.php on line 1
+[03-Apr-2018 10:56:39 America/New_York] PHP Fatal error:  Call to undefined function get_header() in /home/jronywfo/public_html/wp-content/themes/JRonstage-golive032918/index.php on line 1
+[12-May-2018 00:55:35 America/New_York] PHP Fatal error:  Call to undefined function get_header() in /home/jronywfo/public_html/wp-content/themes/JRonstage-golive032918/index.php on line 1
+[12-May-2018 10:32:00 America/New_York] PHP Fatal error:  Call to undefined function get_header() in /home/jronywfo/public_html/wp-content/themes/JRonstage-golive032918/index.php on line 1
+[12-May-2018 13:12:24 America/New_York] PHP Fatal error:  Call to undefined function get_header() in /home/jronywfo/public_html/wp-content/themes/JRonstage-golive032918/index.php on line 1
+[12-May-2018 20:37:03 America/New_York] PHP Fatal error:  Call to undefined function get_header() in /home/jronywfo/public_html/wp-content/themes/JRonstage-golive032918/index.php on line 1

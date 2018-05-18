@@ -1,0 +1,61 @@
+.roles-container{
+
+}
+
+.role-image-container{
+	width: 75%;
+	max-height: 30em;
+	overflow: hidden;}
+
+.role-image-container img{
+}
+
+.role-single {
+	margin-bottom:20px;
+	overflow:hidden;
+	border-bottom: 1px solid #e5e5e5;
+	padding:10px 0;
+}
+
+.role-single:last-child{
+	border-bottom:none;
+}
+.role-details{
+	padding:10px 0;
+}
+
+.role-title{
+	margin-bottom:10px;
+}
+
+.role-details ul li{
+	line-height:26px;
+	font-weight:400;
+}
+
+.role-details ul li span{
+	font-weight:bold;
+	color:#2d507c;
+}
+
+/* ROLES DESKTOP */
+@media only screen and (min-width:768px) {
+	.role-details{
+		width:60%;
+		float:right;
+		padding:0 10px;
+
+	}
+	
+	.role-image-container{
+		float:left;
+		width:40%;
+		max-height: 20em;
+
+	}
+	
+	.role-single h4{
+		margin-top:0;
+		margin-bottom:10px;
+	}
+}

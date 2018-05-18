@@ -1,0 +1,670 @@
+/*
+	Theme Name: An Actor's Life
+	Theme URI: http://zactaylor.org/
+	Description: A wordpress theme designed specifically for actors.
+	Version: 1.0.0
+	Author: Zac Taylor
+	Author URI: http://zactaylor.org/
+	Tags: Actors, Profile, Portfolio
+
+	License:
+	License URI:
+*/
+/*------------------------------------*\
+    COLORS
+\*------------------------------------*/
+
+/*
+BIRD OF PARADISE
+PRIMARY (BG):#1F2833; DARK BLUE
+
+LEAD ACCENTS: #66FCf1; (LIGHT); 
+							#45A29E; (DARK);
+
+DARK TEXT: #0B0C10;
+LIGHT TEXT: #FFF;
+MUTED LIGHT: #C5C6C7;
+*/
+
+/*------------------------------------*\
+    	Atomic
+\*------------------------------------*/
+.bg-primary{
+	background-color:#1F2833;
+}
+
+.bg-neutral{
+	background-color:#e8e8e8;
+}
+
+.text-primary{
+	color:#1F2833;
+}
+
+.bg-lead-light{
+	background-color:#66FCf1;
+}
+
+.text-lead-light{
+	color:#66FCf1;
+}
+
+.bg-lead-dark{
+	background-color:#45A29E;
+}
+
+.text-lead-dark{
+	color:#45A29E;
+}
+
+.bg-dark{
+	background-color:#0B0C10;
+}
+
+.text-dark{
+	color:#0B0C10;
+}
+
+.background-fade{
+	background-color:#aac2ce;
+}
+
+.e-overlay-fade{
+  background: rgba(0,0,0,0.5);
+	opacity: 1;
+  transition:opacity .5s ease;
+}
+
+.e-overlay-fade:hover{
+	opacity:0;
+}
+
+.e-image-scale img{
+	transform:scale(1.10);
+}
+
+.e-image-scale img{
+	
+}
+
+.text-muted{
+	color: #C5C6C7;
+	font-weight:bold;
+}
+
+.text-white{
+	color:#fff;
+}
+
+.bold{
+	font-weight:bold;
+}
+
+.clear-fix{
+	clear:both;
+}
+
+/*/end Atomic*/
+
+/*------------------------------------*\
+    	BASE STYLES
+\*------------------------------------*/
+
+/* global box-sizing */
+*,
+*:after,
+*:before {
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+/* html element 62.5% font-size for REM use */
+html {
+	font-size:10px;
+}
+
+body {
+/* 	font:300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif; */
+	background-color:#fff;
+	font-family: 'Raleway', sans-serif;
+}
+/* font-family: 'Oswald', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Lora', serif;
+font-family: 'Arimo', sans-serif; */
+
+/*IMAGE BASE */
+img{
+	max-width:100%;
+	vertical-align:bottom;
+}
+
+/*LINKS */
+a{
+	color:#45A29E;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+a:hover {
+    border-bottom:2px solid #45A29E;
+}
+
+.no-hover:hover{
+    border-bottom: none;
+}
+
+.inherit{
+    color:inherit;
+    font-weight: inherit;
+}
+
+.headline{
+    color:#000;
+}
+
+.headline:hover{
+    border-bottom: 2px solid #000;
+}
+
+/*TYPOGRAPHY*/
+/* 10px root size */
+
+h1,h2,h3,h4{
+	letter-spacing:1.4px;
+	text-align:left;
+}
+
+/*Main Banner*/
+h1{
+	font-size:10vw;
+}
+
+@media only screen and (min-width:800px) {
+	h1{
+		font-size:8rem;
+		font-size:80px;
+	}
+}
+
+/*Secondary Banner*/
+.secondary-banner h1{
+	font-size:7vw;
+}
+
+@media only screen and (min-width:920px) {
+	.secondary-banner h1{
+		font-size:6rem;
+		font-size:60px;
+	}
+}
+
+h2{
+	font-size:3.5rem;
+}
+
+h3{	
+	font-size:2.5rem;
+}
+
+h4{
+	font-size:2.0rem;
+}
+
+p, li{
+	font-size:1.6rem;
+	line-height:145%;
+}
+p{
+	max-width:85%;
+}
+
+ol,ul{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+@media only screen and (min-width:767px) {	
+/* 	h2{
+		font-size:3.5rem;
+	}
+	
+	h3{	
+		font-size:2.5rem;
+	}
+	
+	h4{
+		font-size:2.0rem;
+	} */
+	
+	p, li{
+		font-size:1.6rem;
+	}
+
+}
+
+.l-page-title{
+}
+
+.l-page-title h2{
+	margin-top: 60px;
+	margin-bottom:20px;
+
+}
+
+/**** SECTIONS *****/
+
+main{
+	padding:0 0;
+}
+
+aside{
+	margin:0 auto;
+	max-width:70%;
+	min-width:350px;
+}
+
+@media only screen and (min-width:1000px) {
+	/*This query has to coincide with main-grid.*/
+	aside{
+		width:100%;
+	}
+}
+
+header{
+	margin:0;
+	padding:0;
+}
+
+footer{
+	margin-top:20px;
+	padding:20px;
+	color: #fff;
+}
+
+footer .l-grid1-3{
+	justify-items:center;
+}
+
+section{
+	overflow:hidden;
+}
+ 
+.section-title{
+	margin: 60px 0;
+}
+
+/*------------------------------------*\
+    	MODULES
+\*------------------------------------*/
+
+
+/* logo */
+.logo {
+	text-align:center;
+	margin-bottom:20px;
+}
+.logo-img{
+	
+}
+
+/*LOGO DESKTOP STYLES */
+@media only screen and (min-width:768px) {
+	.logo{
+		float:left;
+		text-align:left;
+		margin-bottom:0;
+	}
+	
+	.logo-img {
+		max-height:73px;
+	}
+}
+
+/*Page-Header-Image*/
+.page-header-image{
+	margin: 10px auto;
+	display:none;
+}
+
+@media only screen and (min-width:871px){
+	.page-header-image{
+		display:block;
+		margin: 0px auto;
+	}
+}
+
+.page-header-image img{
+	width:100%;
+	border:1px solid #fff;
+	background-color:#fff;
+}
+
+/* FOOTER */
+.footer ul{
+	list-style:none;
+}
+
+.footer ul li{
+	padding:3px;
+}
+
+.footer ul li a{
+	color:#e8e8e8;
+}
+
+.footer ul li a:hover{
+	border-bottom:1px solid #fff;
+}
+
+/*/end modules  */
+
+/*------------------------------------*\
+    	LAYOUT
+\*------------------------------------*/
+.l-wrapper{
+	max-width:1200px;
+	margin:0 auto;
+	overflow:hidden;
+	padding: 0 20px;
+}
+
+.l-wrapper-narrow{ /*For Front Page content */
+	max-width:900px;
+	width:100%;
+	margin:0 auto;
+	position:relative;
+	overflow:hidden;
+	padding: 0 20px;
+}
+
+/* 
+   GRID
+*/
+
+.l-main-banner-grid{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.l-secondary-banner-grid{
+	display:grid;
+	grid-template-columns: 3fr 1fr;
+}
+
+.l-grid-feature{
+	display:grid;
+	grid-template-columns:1fr 3fr;
+}
+
+.l-grid-services{
+	display:grid;
+	grid-template-columns:repeat(1, 1fr);
+}
+
+.l-grid-main,
+.l-grid1-2,
+.l-grid1-3,
+.l-grid1-4 {
+	grid-gap:3em;
+}
+
+@media only screen and (min-width:1000px) {
+	.l-grid-main{
+		display:grid;
+		grid-template-columns: 2fr 0.9fr;
+	}
+}
+
+@media only screen and (min-width:768px) {	
+	.l-grid1-2{
+		display:grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.l-grid1-3{
+		display:grid;
+		grid-template-columns:repeat(3, 1fr);
+	}
+
+	.l-grid1-4{
+		display:grid;
+		grid-template-columns: repeat(4, 1fr);
+	}
+	
+	.l-grid-offset1-2{
+		display:grid;
+		grid-template-columns:1.5fr 2fr;
+		grid-gap:1em;
+	}
+	
+	.l-grid-feature{
+		display:block;
+	}
+	
+	.l-grid-services{
+		grid-template-columns:repeat(2, 1fr);
+	}
+} 
+
+/* COLUMNS */
+
+@media only screen and (min-width:768px) {	
+	.col2-3{
+		width:60%;
+		float:left;
+	}
+
+	.col1-3{
+		width:35%;
+		float:left;
+	}
+	
+	.col1-2{
+		width:45%;
+		float:left;
+	}
+}
+
+/**************************************************end Layout*******************************************************/
+
+.polaroid{
+	box-shadow:0 3px 6px rgba(0,0,0,.25);
+}
+
+/*------------------------------------*\
+    IMAGES
+\*------------------------------------*/
+
+/*------------------------------------*\
+	TYPOGRAPHY
+\*------------------------------------*/
+
+@font-face {
+	font-family:'Font-Name';
+	src:url('fonts/font-name.eot');
+	src:url('fonts/font-name.eot?#iefix') format('embedded-opentype'),
+		url('fonts/font-name.woff') format('woff'),
+		url('fonts/font-name.ttf') format('truetype'),
+		url('fonts/font-name.svg#font-name') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
+
+/*------------------------------------*\
+    RESPONSIVE
+\*------------------------------------*/
+
+@media only screen and (min-width:320px) {
+
+}
+@media only screen and (min-width:480px) {
+
+}
+@media only screen and (min-width:768px) {
+
+}
+@media only screen and (min-width:1024px) {
+
+}
+@media only screen and (min-width:1140px) {
+
+}
+@media only screen and (min-width:1280px) {
+
+}
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),
+	   only screen and (min-resolution:144dpi) {
+
+}
+
+/*------------------------------------*\
+    MISC
+\*------------------------------------*/
+
+::selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+::-webkit-selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+::-moz-selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+
+/*------------------------------------*\
+    WORDPRESS CORE
+\*------------------------------------*/
+
+.alignnone {
+	margin:5px 20px 20px 0;
+}
+.aligncenter,
+div.aligncenter {
+	display:block;
+	margin:5px auto 5px auto;
+}
+.alignright {
+	float:right;
+	margin:5px 0 20px 20px;
+}
+.alignleft {
+	float:left;
+	margin:5px 20px 20px 0;
+}
+a img.alignright {
+	float:right;
+	margin:5px 0 20px 20px;
+}
+a img.alignnone {
+	margin:5px 20px 20px 0;
+}
+a img.alignleft {
+	float:left;
+	margin:5px 20px 20px 0;
+}
+a img.aligncenter {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+.wp-caption {
+	background:#FFF;
+	border:1px solid #F0F0F0;
+	max-width:96%;
+	padding:5px 3px 10px;
+	text-align:center;
+}
+.wp-caption.alignnone {
+	margin:5px 20px 20px 0;
+}
+.wp-caption.alignleft {
+	margin:5px 20px 20px 0;
+}
+.wp-caption.alignright {
+	margin:5px 0 20px 20px;
+}
+.wp-caption img {
+	border:0 none;
+	height:auto;
+	margin:0;
+	max-width:98.5%;
+	padding:0;
+	width:auto;
+}
+.wp-caption .wp-caption-text,
+.gallery-caption {
+	font-size:11px;
+	line-height:17px;
+	margin:0;
+	padding:0 4px 5px;
+}
+.sticky {
+
+}
+.bypostauthor {
+
+}
+
+/*------------------------------------*\
+    PRINT
+\*------------------------------------*/
+
+@media print {
+	* {
+		background:transparent !important;
+		color:#000 !important;
+		box-shadow:none !important;
+		text-shadow:none !important;
+	}
+	a,
+	a:visited {
+		text-decoration:underline;
+	}
+	a[href]:after {
+		content:" (" attr(href) ")";
+	}
+	abbr[title]:after {
+		content:" (" attr(title) ")";
+	}
+	.ir a:after,
+	a[href^="javascript:"]:after,
+	a[href^="#"]:after {
+		content:"";
+	}
+	pre,blockquote {
+		border:1px solid #999;
+		page-break-inside:avoid;
+	}
+	thead {
+		display:table-header-group;
+	}
+	tr,img {
+		page-break-inside:avoid;
+	}
+	img {
+		max-width:100% !important;
+	}
+	@page {
+		margin:0.5cm;
+	}
+	p,
+	h2,
+	h3 {
+		orphans:3;
+		widows:3;
+	}
+	h2,
+	h3 {
+		page-break-after:avoid;
+	}
+}

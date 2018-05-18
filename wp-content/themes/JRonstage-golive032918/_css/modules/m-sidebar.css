@@ -1,0 +1,107 @@
+/* SIDEBAR */
+.sidebar{
+}
+
+.sidebar .blog-content h3{
+    text-align:left !important;
+    margin:10px 0;
+    line-height: 1em;
+}
+
+.sidebar .blog-image{
+	max-height:250px;
+}
+
+.sidebar .blog-image img{
+	width:100%;
+}
+
+.sidebar h4{
+}
+
+.sidebar h3,h4 {
+	text-align:center;
+	margin:0;
+}
+
+.sidebar .butt{
+	margin: 5px 5px;
+}
+
+.sidebar .blog-content, .sidebar .bio-content-excerpt{
+	font-size:1.4rem;
+	line-height:140%;
+}
+
+/* SIDEBAR CONTENT */
+/*Reuse these classes for each sidebar query*/
+.sidebar-widget-container{
+	margin-bottom:20px;
+	border-bottom: 1px solid #e5e5e5;
+	padding-bottom:20px;
+	overflow:hidden;
+}
+
+.sidebar-widget-container:last-child{
+	border-bottom: none;
+}
+
+.sidebar-widget-title{
+	box-shadow:1px 1px 2px #333;
+	padding:20px;
+	background-color: #202934;
+	background-image:
+		repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+		repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+		linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
+		linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
+	color:#fff;
+	margin-bottom:10px !important;
+}
+
+.sidebar-content{
+	border:1px solid #e8e8e8;
+	box-shadow:1px 1px 2px #333;
+	margin: 10px 0;
+	padding-bottom:15px;
+}
+
+.sidebar-content:first-child{
+	margin: 0 0;
+}
+
+.sidebar-content:last-child{
+/* 	border-bottom:none;
+	margin-bottom:0; */
+}
+
+.sidebar-content li, p{
+	font-weight:400;
+}
+
+.sidebar-image{
+	max-height:250px;
+	overflow:hidden;
+}
+
+.sidebar-image img{
+	width:100%;
+	padding:0px;
+	background-color:#fff;
+}
+
+.sidebar-text-container{
+	padding: 15px 10px;
+	margin: 0 auto;
+	display: block;
+	position: relative;
+	width: 75%;
+}
+
+.sidebar-buttons{
+	padding:0 50px;
+}
+
+.sidebar-buttons a{
+	display:block;
+}

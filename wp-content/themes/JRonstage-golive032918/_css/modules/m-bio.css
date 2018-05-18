@@ -1,0 +1,51 @@
+.bio-image{
+	float:left;
+	margin:1em;
+	width:100px;
+}
+
+.bio-image img{
+	-webkit-box-shadow:0 3px 6px rgba(0,0,0,.25);
+	box-shadow:0 3px 6px rgba(0,0,0,.25);
+	background-color:#fff;
+	-webkit-transform:rotate(5deg);
+	transform:rotate(5deg);
+}
+
+.home .bio-content{
+	margin-right:25px;
+	margin-bottom:25px;
+}
+
+.home .bio-image img{
+	margin-right:5px;
+}
+
+.bio-content-excerpt{
+	line-height:18px;
+}
+
+
+/* BEM TESTING */
+.bio{
+	display:block;
+}
+
+.bio__image{	
+	float:left;
+	margin:1em;
+	width:25rem;
+}
+
+.bio__image img{
+	-webkit-box-shadow:0 3px 6px rgba(0,0,0,.25);
+	box-shadow:0 3px 6px rgba(0,0,0,.25);
+	background-color:#fff;
+	-webkit-transform:rotate(5deg);
+	transform:rotate(5deg);
+}
+
+.bio__content{
+	margin-right:25px;
+	margin-bottom:25px;
+}

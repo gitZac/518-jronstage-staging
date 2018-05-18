@@ -1,0 +1,70 @@
+.main-banner {
+	background-color: #202934;
+	background-image:
+		repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+		repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+		linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
+		linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
+	background-size: 70px 120px;
+	overflow:hidden;
+	color: #fff;
+}
+
+.main-banner-title{
+	margin-bottom:0px;
+	text-align:left;
+}
+
+.main-banner-content p{
+	color:#c5c6c7;
+	font-size:1.8rem;
+	padding: 10px 0;
+	max-width:75%;
+}
+
+.main-banner-content a, .main-banner-content p{
+	display:none;
+	font-size:1.8rem;
+	margin:20px 0;
+}
+
+.main-banner-image{
+	align-self:flex-end;
+	overflow:hidden;
+}
+
+.main-banner-image img{
+	width:100%;
+}
+
+.main-banner-list{
+	padding: 20px 0;
+}
+
+.main-banner-list li{
+	font-size:3.5vw;
+	margin-right:10px;
+	display:inline-block;
+}
+
+@media only screen and (min-width:725px) {
+	.main-banner-content a,	.main-banner-content p{
+		display:inline-block;
+	}
+}
+
+@media only screen and (min-width:800px) {
+	.main-banner-list li{
+		font-size:2.8rem;
+		font-size:28px;
+	}	
+}
+
+.main-banner-list span:before{
+	background-color:#45a29E;
+	content: "";
+	display: inline-block;
+	margin: 2px;
+	padding: 5px;
+	box-shadow: 0 2px 0 0 #000;
+}
