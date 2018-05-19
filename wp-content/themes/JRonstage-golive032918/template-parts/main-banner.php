@@ -21,7 +21,7 @@
 			
 			<p class="main-banner__description">Louisville Ky., Southern Indiana-based Actor, Director and coach.</p>
 
-			<a href="<?php echo get_page_link(7); ?>" class="butt butt-secondary">READ MORE</a>
+			<a href="<?php echo get_page_link(7); ?>" class="btn btn--secondary butt butt-secondary">READ MORE</a>
 		</div>
 		
 		<div class="main-banner__image">

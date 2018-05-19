@@ -95,58 +95,6 @@
     	BASE STYLES
 \*------------------------------------*/
 
-/* global box-sizing */
-*,
-*:after,
-*:before {
-	-moz-box-sizing:border-box;
-	box-sizing:border-box;
-	-webkit-font-smoothing:antialiased;
-	font-smoothing:antialiased;
-	text-rendering:optimizeLegibility;
-}
-/* html element 62.5% font-size for REM use */
-html {
-	font-size:10px;
-}
-
-body {
-/* 	font:300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif; */
-	background-color:#fff;
-	font-family: 'Raleway', sans-serif;
-}
-/* font-family: 'Oswald', sans-serif;
-font-family: 'Raleway', sans-serif;
-font-family: 'Merriweather', serif;
-font-family: 'Lora', serif;
-font-family: 'Arimo', sans-serif; */
-
-/*IMAGE BASE */
-img{
-	max-width:100%;
-	vertical-align:bottom;
-}
-
-/*LINKS */
-a{
-	color:#45A29E;
-	text-decoration:none;
-	font-weight:bold;
-}
-
-a:hover {
-    border-bottom:2px solid #45A29E;
-}
-
-.no-hover:hover{
-    border-bottom: none;
-}
-
-.inherit{
-    color:inherit;
-    font-weight: inherit;
-}
-
 .headline{
     color:#000;
 }
@@ -275,9 +223,7 @@ footer .l-grid1-3{
 	justify-items:center;
 }
 
-section{
-	overflow:hidden;
-}
+
  
 .section-title{
 	margin: 60px 0;
@@ -351,21 +297,6 @@ section{
 /*------------------------------------*\
     	LAYOUT
 \*------------------------------------*/
-.l-wrapper{
-	max-width:1200px;
-	margin:0 auto;
-	overflow:hidden;
-	padding: 0 20px;
-}
-
-.l-wrapper-narrow{ /*For Front Page content */
-	max-width:900px;
-	width:100%;
-	margin:0 auto;
-	position:relative;
-	overflow:hidden;
-	padding: 0 20px;
-}
 
 /* 
    GRID

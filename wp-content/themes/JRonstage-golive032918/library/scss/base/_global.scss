@@ -1,0 +1,51 @@
+/* global box-sizing */
+*,
+*:after,
+*:before {
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+
+html {
+	font-size:10px;
+}
+
+body {
+/* 	font:300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif; */
+	background-color:#fff;
+	font-family: 'Raleway', sans-serif;
+}
+/* font-family: 'Oswald', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Lora', serif;
+font-family: 'Arimo', sans-serif; */
+
+/*IMAGE BASE */
+img{
+	max-width:100%;
+	vertical-align:bottom;
+}
+
+/*LINKS */
+a{
+	color:#45A29E;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+a:hover {
+    border-bottom:2px solid #45A29E;
+}
+
+.no-hover:hover{
+    border-bottom: none;
+}
+
+.inherit{
+    color:inherit;
+    font-weight: inherit;
+}
