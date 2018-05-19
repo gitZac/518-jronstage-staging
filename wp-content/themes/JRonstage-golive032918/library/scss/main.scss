@@ -1,9 +1,17 @@
+@import "abstracts/_typography";
 @import "abstracts/_variables";
 
 @import "base/_global";
+@import "base/_utilities";
+@import "base/_wp-core";
 
 @import "modules/_button";
+@import "modules/_footer";
+@import "modules/_header";
+@import "modules/_logo";
+@import "modules/_page-header-image";
 @import "modules/_main-banner";
 
+@import "layout/_grid.scss";
 @import "layout/_section";
 @import "layout/_wrapper";

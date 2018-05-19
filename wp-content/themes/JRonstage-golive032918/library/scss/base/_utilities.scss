@@ -1,0 +1,70 @@
+.bg-primary{
+	background-color:#1F2833;
+}
+
+.bg-neutral{
+	background-color:#e8e8e8;
+}
+
+.text-primary{
+	color:#1F2833;
+}
+
+.bg-lead-light{
+	background-color:#66FCf1;
+}
+
+.text-lead-light{
+	color:#66FCf1;
+}
+
+.bg-lead-dark{
+	background-color:#45A29E;
+}
+
+.text-lead-dark{
+	color:#45A29E;
+}
+
+.bg-dark{
+	background-color:#0B0C10;
+}
+
+.text-dark{
+	color:#0B0C10;
+}
+
+.background-fade{
+	background-color:#aac2ce;
+}
+
+.e-overlay-fade{
+  background: rgba(0,0,0,0.5);
+	opacity: 1;
+  transition:opacity .5s ease;
+}
+
+.e-overlay-fade:hover{
+	opacity:0;
+}
+
+.e-image-scale img{
+	transform:scale(1.10);
+}
+
+.text-muted{
+	color: #C5C6C7;
+	font-weight:bold;
+}
+
+.text-white{
+	color:#fff;
+}
+
+.bold{
+	font-weight:bold;
+}
+
+.clear-fix{
+	clear:both;
+}

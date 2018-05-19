@@ -1,9 +1,28 @@
+main{
+	padding:0 0;
+}
+
+aside{
+	margin:0 auto;
+	max-width:70%;
+	min-width:350px;
+}
+
+@media only screen and (min-width:1000px) {
+	/*This query has to coincide with main-grid.*/
+	aside{
+		width:100%;
+	}
+}
+
 .section{
     overflow:hidden;
  
     &--front{
 
     }
+}
 
-    
+.section-title{
+	margin: 60px 0;
 }

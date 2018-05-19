@@ -1,0 +1,20 @@
+.logo {
+	text-align:center;
+	margin-bottom:20px;
+}
+.logo-img{
+	
+}
+
+/*LOGO DESKTOP STYLES */
+@media only screen and (min-width:768px) {
+	.logo{
+		float:left;
+		text-align:left;
+		margin-bottom:0;
+	}
+	
+	.logo-img {
+		max-height:73px;
+	}
+}
