@@ -303,6 +303,25 @@ a img.aligncenter {
     page-break-after: avoid;
   }
 }
+.bio {
+  display: block;
+}
+.bio__image {
+  float: left;
+  margin: 1em;
+  width: 25rem;
+}
+.bio__image img {
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, .25);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .25);
+  background-color: #fff;
+  -webkit-transform: rotate(5deg);
+  transform: rotate(5deg);
+}
+.bio__content {
+  margin-right: 25px;
+  margin-bottom: 25px;
+}
 /* BUTTONS */
 .btn {
   padding: 1.1em 1.1em;

@@ -25,13 +25,17 @@
 	</section>
 
 	<section class="section section--front l-wrapper">
+		
 		<h2 class="section-title">Contact J.R.</h2>
+		
 		<div class="col1-2">
 			<?php get_template_part('template-parts/bio'); ?>
 		</div>	
+		
 		<div class="col1-2">
 			<?php echo do_shortcode( '[contact-form-7 id="97" title="Contact form 1"]' ); ?>	
 		</div>
+
 	</section>
 	
 </main>
