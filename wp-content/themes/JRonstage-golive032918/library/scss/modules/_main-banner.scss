@@ -1,0 +1,73 @@
+.main-banner {
+	background-color: #202934;
+	background-image:
+		repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+		repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+		linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
+		linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
+	background-size: 70px 120px;
+	overflow:hidden;
+    color:$textWhite;
+
+    &__content{
+    }
+
+    &__description{
+        color:$textMuted;
+        font-size:1.8rem;
+        padding: 10px 0;
+        max-width:75%;
+    }
+
+    &__title{
+        margin-bottom:0px;
+        text-align:left;
+    }
+
+    &__image{
+        align-self:flex-end;
+        overflow:hidden;
+        
+        & img{
+            width:100%;
+        }
+    }
+
+    &__list{
+        padding: 20px 0;
+    }
+
+    &__list-item{
+        font-size:3.5vw;
+        margin-right:10px;
+        display:inline-block;
+    }
+
+    &__list-item-bullet:before{
+        background-color:#45a29E;
+        content: "";
+        display: inline-block;
+        margin: 2px;
+        padding: 5px;
+        box-shadow: 0 2px 0 0 #000;
+    }
+}
+
+.main-banner__content a, .main-banner__content p{
+	display:none;
+    // margin:20px 0;
+    // font-size:3.5vw;
+}
+
+@media only screen and (min-width:725px) {
+	.main-banner__content a,	.main-banner__content p{
+		display:block;
+	}
+}
+
+@media only screen and (min-width:800px) {
+	.main-banner__list li{
+		font-size:2.8rem;
+		font-size:28px;
+	}	
+}

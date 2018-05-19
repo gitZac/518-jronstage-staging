@@ -10,20 +10,21 @@
 		
 		<?php $banner = new WP_Query($args); while($banner->have_posts()): $banner->the_post(); ?>
 		
-		<div class="main-banner-content">
-			<h1 class="main-banner-title"><?php the_title(); ?></h1>
+		<div class="main-banner__content">
+			<h1 class="main-banner__title"><?php the_title(); ?></h1>
 			
-			<ul class="main-banner-list">
-				<li><span> Actor</span></li>
-				<li><span> Director</span></li>
-				<li><span> Coach</span></li>
+			<ul class="main-banner__list">
+				<li class="main-banner__list-item"><span class="main-banner__list-item-bullet"> Actor</span></li>
+				<li class="main-banner__list-item"><span class="main-banner__list-item-bullet"> Director</span></li>
+				<li class="main-banner__list-item"><span class="main-banner__list-item-bullet"> Coach</span></li>
 			</ul>
 			
-			<p class="">Louisville Ky., Southern Indiana-based Actor, Director and coach.</p>
+			<p class="main-banner__description">Louisville Ky., Southern Indiana-based Actor, Director and coach.</p>
+
 			<a href="<?php echo get_page_link(7); ?>" class="butt butt-secondary">READ MORE</a>
 		</div>
 		
-		<div class="main-banner-image">
+		<div class="main-banner__image">
 			<?php the_post_thumbnail(); ?>
 		</div>
 		<?php endwhile; wp_reset_postdata(); ?>
