@@ -1,0 +1,43 @@
+.blog-post{
+    //	max-width:750px;
+/*    border-bottom: 2px solid #e5e5e5;*/
+//    margin-bottom:20px;
+    
+    &__image{
+        overflow:hidden;
+        max-height:350px;
+        margin-bottom:30px;
+    }
+    
+    &__content{
+        margin:20px 0;
+    }
+    
+    &__info{
+        
+    }
+    
+    &__title{
+        margin:20px 0;
+        color:#000;
+        display:inline-block;
+    }
+    
+    &__title a:hover{
+//        border-bottom:2px solid #000;
+    }
+    
+    &__link{
+        display:inline-block;
+        font-size:1.6rem;
+    }
+}
+
+.blog-post:after{
+    background: #e5e5e5;
+    content: "";
+    display: block;
+    height: 1px;
+/*    margin: 0.75em auto;*/
+    width: 85%;
+}

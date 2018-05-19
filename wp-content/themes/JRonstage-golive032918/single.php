@@ -5,49 +5,40 @@
 	<h2><?php wp_title(''); ?></h2>
 </div>
 
-<div class="l-wrapper l-grid-main">
+<div class="l-grid-main l-wrapper">
 	
-	<main class="" role="main">
-		
+	<main class="main" role="main">
 		<?php while (have_posts()) : the_post(); ?>
 
-  <section class="blog-post">
-		
-		<div class="blog-image">
-			<?php the_post_thumbnail(); ?>
-		</div>
-    
-    <div class="blog-content">
-      <p class="text-muted">By <?php the_author(); ?> | <?php the_date(); ?></p>
-      <h3><a href="<?php echo esc_url(the_permalink() );?>"><?php the_title(); ?></a></h3>
-      <?php the_content(); ?>    
-    </div>
-		
-		<p><a href="<?php echo esc_url(get_page_link(13) ) ; ?>">Back to the blog</a></p>
-		<p><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a></p>
-		
-  </section>
-		
+			<section class="section">
+				
+				<div class="blog-post">
+							
+					<div class="blog-image blog-post__image">
+						<?php the_post_thumbnail(); ?>
+					</div>
+					
+					<div class="blog-content blog-post__content">
+                        <p class="text-muted blog-post__info">By <?php the_author(); ?> | <?php the_date(); ?></p>
+                        <a href="<?php echo esc_url(the_permalink() );?>"><h3 class="blog-post__title"><?php the_title(); ?></h3></a>
+                        <?php the_content(); ?>    
+					</div>
+						
+					<a class="blog-post__link" href="<?php echo esc_url(get_page_link(13) ) ; ?>">Back to the blog</a>
+                   <br>
+                    <a class="blog-post__link" href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a>
+                    
+			    </div><!-- END blog-post	-->
+								
+			</section>
+			
 		<?php endwhile; ?>
 
-	</main>	
+	</main>
+
+	
 	<?php get_sidebar(); ?>
 
-</div>
+</div><!-- END GRID-->
+
 <?php get_footer(); ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
