@@ -8,7 +8,6 @@
 		<h2 class="section-title">Now Playing...</h2>	
 		<?php get_template_part('template-parts/feature-show'); ?>
 		
-		<h3 class="section-title">More Upcoming Shows:</h3>	
 		<?php get_template_part('template-parts/upcoming-shows'); ?>
 
 	</section>

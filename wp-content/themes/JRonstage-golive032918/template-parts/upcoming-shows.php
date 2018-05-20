@@ -1,21 +1,42 @@
-<div class="show-card-container">
 
-     <?php $args = array(
-      'post_type' => 'upcoming_shows',							
-      'posts_per_page' => -1,					
-      'orderby' => 'date',
-      'order' => 'ASC',
+    
+
+    
+<div class="card    show-card-container">
+     
+    <h3 class="card__group-title">Card__group-title</h3>
+
+    <?php $args = array(
+        'post_type' => 'upcoming_shows',							
+        'posts_per_page' => -1,					
+        'orderby' => 'date',
+        'order' => 'ASC',
     ); ?>
       
    <?php $upcoming_shows = new WP_Query($args); while($upcoming_shows->have_posts()): $upcoming_shows->the_post(); ?>
+   
+   
 
-  <div class="show-card l-grid-offset1-2">
+  <div class="card__content-container     show-card l-grid-offset1-2">
     
-    <div class="show-card-image">
-      <a href="<?php the_permalink(); ?>">
-        <?php the_post_thumbnail();?>
-      </a>
+    
+    
+    <div class="card__image-container">
+       
+        <a href="<?php the_permalink(); ?>" class="--modclass-image-wrap-link">
+            <?php the_post_thumbnail();?>
+        </a>
+        
     </div>
+
+    <div class="card__details-container">
+        
+        
+        
+
+    </div>
+    
+    
     
     <div class="show-card-content">
         
@@ -41,6 +62,8 @@
 
      
   </div><!--END US-CONTENT -->
+   
+   
     <?php endwhile; wp_reset_postdata(); ?>
 
 </div>
