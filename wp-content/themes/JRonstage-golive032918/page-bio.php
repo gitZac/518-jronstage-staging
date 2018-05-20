@@ -15,11 +15,11 @@
 		
 		<?php get_template_part('template-parts/bio');?>
 
-		<section>
+		<section class="section">
 			<?php get_template_part('template-parts/roles'); ?>
 		</section>
 		
-		<section>
+		<section class="section">
 			<?php get_template_part('template-parts/resume'); ?>
 		</section>
 	

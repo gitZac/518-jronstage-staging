@@ -1,0 +1,36 @@
+.wpcf7{
+  background-color: #2d507c;
+  padding:10px !important;
+  width: 75%;
+  display: block;
+  color:#fff;
+  overflow:hidden;
+    
+    & input, textarea{
+        width:100%;
+    }
+    
+    & label{
+        font-weight:bold;
+    }
+    
+    & .btn{
+        width:25%;
+        margin:0 auto;
+        display:block;
+    }
+    
+    &--2col{
+        width:100%;
+    }
+    
+    & p{
+        max-width: 100%;
+    }    
+}
+
+@media only screen and (min-width:768px) {
+  .home div.wpcf7{
+    width:115%;
+  }
+}

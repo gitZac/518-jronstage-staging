@@ -8,40 +8,43 @@
   position:relative;
   padding: 50px 50px;
   transition:background-size 0.5s;
-}
+    
+    &__content{
+      display:table-cell;
+      position:relative;
+      z-index:2;
+      color:rgba(255,255,255,0.9);
+      transition:color 0.5s ease-in-out;   
+    }
+    
+    &__content:hover{
+      color:rgba(255,255,255,1);
+    }
+    
+    &__title{
 
-.feature:hover{
-}
-
-.feature a{
-  display:block;
-}
-
-.feature-no-tbpadding{
-  padding: 0 50px;
-}
-
-.feature h2{
-  font-weight:bold;
-  margin:15px 0;
-  color:#fff;
-}
-
-/* .feature h2:after {
-  background: #45A29E;
-  content: "";
-  display: block;
-  height: 3px;
-  margin: 0.75em 1em;
-  width: 40%;
-}
- */
-.feature h3{
-  font-weight:bold;
-}
-
-.feature p{
-  font-weight:bold;
+    }
+    
+    &__title:after{
+//      background: #45A29E;
+//      content: "";
+//      display: block;
+//      height: 3px;
+//      margin: 0.75em 1em;
+//      width: 40%;        
+    }
+    
+    &__info-group{
+        display:block;
+    }
+    
+    &__button-container{
+      display:block;  
+    }
+     
+    &--text-white{
+        color:#fff;
+    } 
 }
 
 /*Shaded overlay */
@@ -56,29 +59,20 @@
   transition:background-color 0.5s linear;
 }
 
-/* .active.feature::after {
-  background-color:rgba(0,0,0,.7);
-} */
-
 .feature:hover:after{
   background-color:rgba(0,0,0,.9);
-
 }
 
-.feature-text{
-  display:table-cell;
-  position:relative;
-  z-index:2;
-  color:rgba(255,255,255,0.9);
-  transition:color 0.5s ease-in-out;
-}
 
-.feature-text:hover{
-  color:rgba(255,255,255,1);
-}
 
-.feature a{
-  margin-top:10px;
+
+
+
+
+/****** TWAIN FEATURE STYLES ********/
+#twain .l-grid1-2{
+  grid-template-columns: 1fr 1fr;
+  grid-gap:1em;
 }
 
 .feature-image{
@@ -92,19 +86,8 @@
   z-index:2;
 }
 
-.feature-text a:hover{
-  border-bottom:none;
-}
-
 .feature-image{
   float:right;
-}
-
-/****** TWAIN FEATURE STYLES ********/
-
-#twain .l-grid1-2{
-  grid-template-columns: 1fr 1fr;
-  grid-gap:1em;
 }
 
 #twain .feature-image{
@@ -122,9 +105,6 @@
 
 #twain .feature-image{
   align-self:flex-end;
-}
-
-#twain .feature-text h2{
 }
 
 @media only screen and (min-width:768px){  

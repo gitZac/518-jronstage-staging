@@ -13,7 +13,7 @@
 
 	</section>
 
-	<section id="twain" class="section section--front section--feature section--feature-no-tb-padding feature feature-no-tbpadding text-white" style="background-image:url(<?php echo get_stylesheet_directory_uri(); ?>/img/white-wash.jpg);">
+	<section id="twain" class="section section--front section--feature section--feature-no-tb-padding" style="background-image:url(<?php echo get_stylesheet_directory_uri(); ?>/img/white-wash.jpg);">
 		<?php get_template_part('template-parts/twain-feature'); ?>
 	</section>
 

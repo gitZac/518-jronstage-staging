@@ -1,0 +1,65 @@
+.card{
+    &__group-title{
+        
+    }
+    
+    &__content-container{
+        
+        
+    }
+    
+    &__single{
+        margin-bottom:20px;
+        overflow:hidden;
+        border-bottom: 1px solid #e5e5e5;
+        padding:10px 0;
+        
+    }
+    
+    &__single:last-child{
+        border-bottom: none;
+    }
+    
+    &__image-container{
+        width: 75%;
+        max-height: 30em;
+        overflow: hidden;
+    }
+    
+    &__details-container{
+        padding:10px 0;
+        overflow:hidden;
+    }
+    
+    &__details{
+        
+    }
+    
+    &__single-title{
+        
+    }
+    
+    &__single-title-link{
+        
+    }
+}
+
+
+/* ROLES DESKTOP */
+@media only screen and (min-width:768px) {
+	.card__details{
+		width:60%;
+		padding:0 10px;
+	}
+	
+	.card__image-container{
+		float:left;
+		width:40%;
+		max-height: 20em;
+	}
+	
+	.card__single-title{
+		margin-top:0;
+		margin-bottom:10px;
+	}
+}
