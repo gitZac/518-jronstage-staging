@@ -1,10 +1,10 @@
 <div class="card">
-   <h3 class="card__group-title"></h3>
+   <h3 class="card__group-title">My Favorite Roles</h3>
    
    <div class="card__group-container">
        
         <?php $args = array(
-            'post_type' => 'upcoming_shows',							
+            'post_type' => 'best_roles',							
             'posts_per_page' => -1,					
             'orderby' => 'date',
             'order' => 'ASC',
@@ -25,15 +25,24 @@
               
                 <h4 class="card__single-title"><a class="card__single-title-link" href="<?php the_permalink();?>"><?php the_title(); ?></a></h4>
 
-                <div class="text-block"><span>Role: </span><?php the_field('your_role'); ?></div>
+                <ul class="text-block text-block--list">
+                   
+                    <li class="text-block__item">
+                        <span class="u-color-primary u-text-bold">Role: </span><?php the_field('your_role'); ?>
+                    </li>
+                    <li class="text-block__item">
+                        <span class="u-color-primary u-text-bold">Position: </span><?php the_field('position'); ?>
+                    </li>
+                    <li class="text-block__item">
+                        <span class="u-color-primary u-text-bold">Run: </span> <?php the_field('year'); ?>
+                    </li>
+                    <li class="text-block__item">
+                        <span class="u-color-primary u-text-bold">Company: </span><?php the_field('company'); ?>
+                    </li>
 
-                <div class="text-block"><span>Position: </span><?php the_field('position'); ?></div>
+                </ul>
 
-                <div class="text-block"><span>Run: </span><?php the_field('year'); ?></div>
-
-                <div class="text-block"><span>Company: </span><?php the_field('company'); ?></div>
-
-                <div><a href="<?php the_permalink(); ?>"><?php ?>Read More</a></div> 
+                <a href="<?php the_permalink(); ?>"><?php ?>Read More</a> 
                
            </div>
             

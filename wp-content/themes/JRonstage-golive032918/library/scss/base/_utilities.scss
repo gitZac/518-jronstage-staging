@@ -1,37 +1,33 @@
-.bg-primary{
-	background-color:#1F2833;
+.u-color-primary{
+    color:$colorPrimary;
 }
 
-.bg-neutral{
-	background-color:#e8e8e8;
+.u-color-primary-light{
+    color:$colorPrimaryLight;
 }
 
-.text-primary{
-	color:#1F2833;
+.u-color-primary-mid{
+   color:$colorPrimaryMid;
 }
 
-.bg-lead-light{
-	background-color:#66FCf1;
+.u-bgcolor-primary{
+    background-color:$colorPrimary;
 }
 
-.text-lead-light{
-	color:#66FCf1;
+.u-bgcolor-primary-light{
+    background-color:$colorPrimaryLight;
 }
 
-.bg-lead-dark{
-	background-color:#45A29E;
+.u-bgcolor-primary-mid{
+    background-color:$colorPrimaryMid;
 }
 
-.text-lead-dark{
-	color:#45A29E;
+.u-text-muted{
+   color: $colorTextMuted;
 }
 
-.bg-dark{
-	background-color:#0B0C10;
-}
-
-.text-dark{
-	color:#0B0C10;
+.u-text-bold{
+    font-weight:700;
 }
 
 .background-fade{
@@ -50,19 +46,6 @@
 
 .e-image-scale img{
 	transform:scale(1.10);
-}
-
-.text-muted{
-	color: #C5C6C7;
-	font-weight:bold;
-}
-
-.text-white{
-	color:#fff;
-}
-
-.bold{
-	font-weight:bold;
 }
 
 .clear-fix{
