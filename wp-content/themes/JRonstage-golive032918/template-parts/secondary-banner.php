@@ -1,4 +1,5 @@
-<div class="secondary-banner bg-primary">
+<div class="hero hero--banner  secondary-banner ">
+	
 	<div class="l-wrapper l-secondary-banner-grid">
 		
 		<?php $args = array(
@@ -10,9 +11,9 @@
 		
 		<?php $banner = new WP_Query($args); while($banner->have_posts()): $banner->the_post(); ?>
 		
-		<div class="secondary-banner-content l-gridcustom">
-			<h1 class="secondary-banner-title"><?php the_field('banner_header'); ?></h1>
-			<ul class="main-banner-list ">
+		<div class="l-gridcustom">
+			<h1 class=""><?php the_field('banner_header'); ?></h1>
+			<ul class="">
 				<li><span> </span>Actor</li>
 				<li><span> </span>Director</li>
 				<li><span> </span>Coach</li>

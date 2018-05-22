@@ -29,9 +29,11 @@
 	<header class="" role="banner ">
         
         <div class="social-bar">
+           
             <div class="l-wrapper">
                 <?php html5blank_social_nav(); ?>
             </div>
+            
         </div>
 		
 		<div class="l-wrapper">
@@ -39,6 +41,7 @@
             <div class="mobile-nav">
                 <a href="#" class="mobile-icon"><i class="fa fa-bars"></i>Menu</a>
             </div>
+            
             <nav class="main-nav" role="navigation">
                 <?php html5blank_nav();?>
             </nav>
@@ -46,5 +49,3 @@
 		</div>
 		
 	</header>
-
-

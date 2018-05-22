@@ -1,14 +1,15 @@
-.main-banner {
+.hero {
 	background-color: #202934;
-	background-image:
-		repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
-		repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
-		linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
-		linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
-	background-size: 70px 120px;
+	background-image:$bg-pattern;
+    background-size: 70px 120px;
 	overflow:hidden;
     color:#fff;
 
+    &--banner{
+        
+    }
+    
+    
     &__content{
 
     }
@@ -54,20 +55,20 @@
     }
 }
 
-.main-banner__content a, .main-banner__content p{
+.hero__content a, .hero__content p{
 	display:none;
     // margin:20px 0;
     // font-size:3.5vw;
 }
 
 @media only screen and (min-width:725px) {
-	.main-banner__content a,	.main-banner__content p{
+	.hero__content a,	.hero__content p{
 		display:block;
 	}
 }
 
 @media only screen and (min-width:800px) {
-	.main-banner__list li{
+	.hero__list li{
 		font-size:2.8rem;
 		font-size:28px;
 	}	
