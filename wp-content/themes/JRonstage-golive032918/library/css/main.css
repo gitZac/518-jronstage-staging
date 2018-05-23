@@ -1,6 +1,13 @@
 background-image: repeating-linear-gradient(120deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .1) 1px, transparent 1px, transparent 60px), repeating-linear-gradient(60deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .1) 1px, transparent 1px, transparent 60px), -moz-linear-gradient(330deg, rgba(0, 0, 0, .1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, .1) 75%, rgba(0, 0, 0, .1)), -moz-linear-gradient(30deg, rgba(0, 0, 0, .1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, .1) 75%, rgba(0, 0, 0, .1));
 background-image: repeating-linear-gradient(120deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .1) 1px, transparent 1px, transparent 60px), repeating-linear-gradient(60deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .1) 1px, transparent 1px, transparent 60px), -o-linear-gradient(330deg, rgba(0, 0, 0, .1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, .1) 75%, rgba(0, 0, 0, .1)), -o-linear-gradient(30deg, rgba(0, 0, 0, .1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, .1) 75%, rgba(0, 0, 0, .1));
 background-image: repeating-linear-gradient(120deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .1) 1px, transparent 1px, transparent 60px), repeating-linear-gradient(60deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .1) 1px, transparent 1px, transparent 60px), linear-gradient(60deg, rgba(0, 0, 0, .1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, .1) 75%, rgba(0, 0, 0, .1)), linear-gradient(120deg, rgba(0, 0, 0, .1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, .1) 75%, rgba(0, 0, 0, .1));
+/* 
+ 0-600 : Phone
+ 600-900 : Tablet - Portrait
+ 900-1200 : Tablet - Landscape
+ [1200 - 1800] : Normal Styles
+ 1800 + : Big Desktop
+ */
 @font-face {
   font-family: 'Font-Name';
   src: url('fonts/font-name.eot');
@@ -147,6 +154,9 @@ a:hover {
 }
 .u-text-bold {
   font-weight: 700;
+}
+.u-d-iblock {
+  display: inline-block;
 }
 .background-fade {
   background-color: #aac2ce;
@@ -382,20 +392,25 @@ a img.aligncenter {
   background-color: #53dbd1;
 }
 .card__single {
-  margin-bottom: 20px;
-  overflow: hidden;
   border-bottom: 1px solid #e5e5e5;
-  padding: 10px 0;
+  padding: 2rem;
+}
+.card__single-title {
+  text-align: left;
+  font-size: 3rem;
+}
+.card__single-title-link {
+  color: #000;
+}
+.card__single-title-link:hover {
+  border-bottom: 2px solid #000;
 }
 .card__single-image {
-  float: left;
-  width: 40%;
-  max-height: 20em;
+  overflow: hidden;
+  max-height: 25rem;
 }
 .card__single-details {
-  width: 60%;
-  float: right;
-  padding: 0 10px;
+  max-height: 25rem;
 }
 .feature {
   background-repeat: no-repeat;
@@ -888,6 +903,96 @@ header .l-wrapper {
 }
 .sidebar .blog-post:after {
   display: none;
+}
+.text-block p {
+  margin: 0;
+}
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+}
+@media (max-width: 56.25em) {
+  .row {
+    max-width: 50rem;
+  }
+}
+.row:not(:last-child) {
+  margin-bottom: 8rem;
+}
+@media (max-width: 56.25em) {
+  .row:not(:last-child) {
+    margin-bottom: 6rem;
+  }
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row [class^="col"] {
+  float: left;
+}
+@media (max-width: 56.25em) {
+  .row [class^="col"] {
+    width: 100% !important;
+  }
+}
+.row [class^="col"]:not(:last-child) {
+  margin-right: 6rem;
+}
+@media (max-width: 56.25em) {
+  .row [class^="col"]:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 6rem;
+  }
+}
+.row .col1-of-2 {
+  width: calc(( 100% - 6rem ) /2);
+}
+.row .col1-of-3 {
+  width: calc((100% - 2 * 6rem) /3);
+}
+.row .col2-of-3 {
+  width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem);
+}
+.row .col1-of-4 {
+  width: calc((100% - 3 * 6rem ) /4);
+}
+.row .col2-of-4 {
+  width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem);
+}
+.row .col3-of-4 {
+  width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem);
+}
+.bg-red {
+  background-color: orangered;
+}
+.bg-green {
+  background-color: palegreen;
+}
+.padding100 {
+  padding: 2rem;
+}
+.grid4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-row-gap: 1rem;
+}
+.grid4__item-1 {
+  grid-column: 1/ span 4;
+}
+.grid4__item-2 {
+  grid-row: 2/ span 1;
+  grid-column: 1 / span 4;
+}
+.grid4__item-3 {
+  grid-row: 2/ span 1;
+  grid-column: 4/ span 1;
+}
+.grid4__item-4 {
+  grid-row: 3/ span 1;
+  grid-column: 1/ span 4;
 }
 .l-main-banner-grid {
   display: grid;

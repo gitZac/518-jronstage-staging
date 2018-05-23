@@ -12,6 +12,17 @@ $colorPrimary:#1F2833;
 $colorPrimaryLight:#65fdf1;
 $colorPrimaryMid:#47a39e;
 
+// GRID
+
+$grid-width:114rem;
+$grid-gutter-vertical:8rem;
+
+$grid-gutter-vertical--small:6rem;
+$grid-gutter-horizontal:6rem;
+
+//font-sizes
+$default-font-size:1.6rem;
+
 $bg-pattern: repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
    repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
    -webkit-linear-gradient(330deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),

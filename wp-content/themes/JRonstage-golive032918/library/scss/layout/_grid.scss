@@ -1,3 +1,117 @@
+//Note: .col must be the first class in the markup. Otherwise the floats won't work.
+
+.row{
+    max-width:$grid-width;
+    margin:0 auto;
+    // Grid will take a max value of 1114px.
+
+    @include respond(tab-port){
+        max-width: 50rem;
+    }
+
+    &:not(:last-child){
+        margin-bottom:$grid-gutter-vertical;
+
+        @include respond(tab-port){
+            margin-bottom:$grid-gutter-vertical--small; 
+        }
+    }
+
+    @include clearfix;
+
+    [class^="col"]{
+        float:left;
+
+        @include respond(tab-port){
+            width:100% !important; //Removes columns.
+        }
+
+        &:not(:last-child){
+            margin-right: $grid-gutter-horizontal;
+            
+            @include respond(tab-port){
+                margin-right:0; //Since columns are removed, horizontal gutter is not needed.
+                margin-bottom:$grid-gutter-vertical--small;
+            }
+        }
+    }
+
+    .col1-of-2{
+        width:calc( ( 100% - #{$grid-gutter-horizontal} ) /2 );
+    }
+
+    .col1-of-3{
+        width:calc((100% - 2 * #{$grid-gutter-horizontal}) /3 );
+    }
+
+    .col2-of-3{
+        width: calc(2 * ((100% - 2 * #{$grid-gutter-horizontal}) / 3) + #{$grid-gutter-horizontal});
+    }
+
+    .col1-of-4{
+        width:calc((100% - 3 * #{$grid-gutter-horizontal} ) /4 );
+    }
+
+    .col2-of-4{
+        width: calc(2 * ((100% - 3 * #{$grid-gutter-horizontal}) / 4) + #{$grid-gutter-horizontal});
+    }
+
+    .col3-of-4{
+        width: calc(3 * ((100% - 3 * #{$grid-gutter-horizontal}) / 4) + 2 * #{$grid-gutter-horizontal});
+    }
+
+}
+
+
+//for testing
+
+.bg-red{
+    background-color:orangered;
+}
+
+.bg-green{
+    background-color:palegreen;
+}
+
+.padding100{
+    padding:2rem;
+}
+
+//CSSGRID
+
+.grid4{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(3,1fr);
+    grid-row-gap: 1rem;
+    
+    &__item-1{
+        grid-column: 1/ span 4;
+        
+    }
+    
+    &__item-2{
+        grid-row:2/ span 1;
+        grid-column: 1 / span 4;
+        
+    }
+    
+    &__item-3{
+        grid-row: 2/ span 1;
+        grid-column: 4/ span 1;
+        
+    }
+    
+    &__item-4{
+        grid-row: 3/ span 1;
+        grid-column: 1/ span 4;
+    }
+}
+
+
+//OLD CODE TO BE REFACTORED
+
+
 .l-main-banner-grid{
 	display:grid;
 	grid-template-columns: 1fr 1fr;

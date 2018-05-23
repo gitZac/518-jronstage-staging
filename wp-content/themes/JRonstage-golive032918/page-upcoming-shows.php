@@ -15,7 +15,7 @@
     
     <section>    
 
-      <?php get_template_part('template-parts/upcoming-shows'); ?>
+        <?php get_template_part('template-parts/upcoming-shows'); ?>
     </section>
     
     </main>

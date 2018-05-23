@@ -9,22 +9,29 @@
     }
     
     &__single{
-        margin-bottom: 20px;
-        overflow: hidden;
         border-bottom: 1px solid #e5e5e5;
-        padding: 10px 0;
+        padding:2rem;
+    }
+    
+    &__single-title{
+        text-align: left;
+        font-size: 3rem;
+    }
+    
+    &__single-title-link{
+        color:#000;
+    }
+    
+    &__single-title-link:hover{
+        border-bottom: 2px solid #000;
     }
     
     &__single-image{
-        float: left;
-        width: 40%;
-        max-height: 20em;
+        overflow:hidden;
+        max-height: 25rem;
     }
     
     &__single-details{
-        width: 60%;
-        float: right;
-        padding: 0 10px;
-
+        max-height: 25rem;
     }
 }
