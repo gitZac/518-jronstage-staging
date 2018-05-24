@@ -1,0 +1,69 @@
+.hero {
+	background-color: $colorPrimary;
+	background-image:$bg-pattern;
+    background-size: 7rem 10.2rem;
+	overflow:hidden;
+    color:#fff;
+
+    &--banner{
+        
+    }
+    
+    &__content{
+        padding-left:1rem;
+    }
+
+    &__image{
+        align-self:flex-end;
+        overflow:hidden;
+        
+        & img{
+            width:100%;
+        }
+    }
+
+    &__list{
+        padding: 2rem 0;
+    }
+
+    &__list-item{
+        font-size: 4rem;
+        
+        @include respond(tab-port){
+            font-size: 3rem;
+        }
+        
+        @include respond(phone){
+            font-size: 2rem;
+        }
+        
+        margin-right:1rem;
+        display:inline-block;
+    }
+
+    &__list-item-bullet:before{
+        background-color:#45a29E;
+        content: "";
+        display: inline-block;
+        margin: .2rem;
+        padding: .5rem;
+        box-shadow: 0 2px 0 0 #000;
+    }
+    
+    &__description{
+        color:$colorTextMuted;
+        font-size:1.8rem;
+        
+        @include respond(phone){
+            
+            display:none;
+        }
+        
+        padding: 2rem 0;
+        max-width:75%;
+    }
+    
+    &__btn-container{
+        padding:2rem 0;
+    }
+}

@@ -1,5 +1,6 @@
-<div class="hero bg-primary">
-	<div class="l-wrapper l-main-banner-grid">
+<div class="hero">
+
+	<div class="l-wrapper grid2">
 		
 		<?php $args = array(
 			'post_type' => 'front_page_banner',							
@@ -11,7 +12,7 @@
 		<?php $banner = new WP_Query($args); while($banner->have_posts()): $banner->the_post(); ?>
 		
 		<div class="hero__content">
-			<h1 class="hero__title"><?php the_title(); ?></h1>
+			<h1 class="header__main"><?php the_title(); ?></h1>
 			
 			<ul class="hero__list">
 				<li class="hero__list-item"><span class="hero__list-item-bullet"> Actor</span></li>
@@ -20,8 +21,11 @@
 			</ul>
 			
 			<p class="hero__description">Louisville Ky., Southern Indiana-based Actor, Director and coach.</p>
-
-			<a href="<?php echo get_page_link(7); ?>" class="btn btn--secondary">READ MORE</a>
+			
+			<div class="hero__btn-container">
+			    <a href="<?php echo get_page_link(7); ?>" class="btn btn--secondary btn--master">READ MORE</a>
+			</div>
+			
 		</div>
 		
 		<div class="hero__image">
@@ -29,4 +33,5 @@
 		</div>
 		<?php endwhile; wp_reset_postdata(); ?>
 	</div><!--INSIDE CONTAINER -->
+	
 </div><!-- HEADER-BANNER -->

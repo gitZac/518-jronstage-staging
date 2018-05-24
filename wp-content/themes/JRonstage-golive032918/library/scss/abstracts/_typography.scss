@@ -9,14 +9,42 @@
     font-style:normal;
 }
 
+.header{
+    
+    &__main{
+        font-size:9rem;
+        
+        margin-bottom:0px;
+        text-align:left;
+        
+        @include respond(tab-port){
+            font-size: 7rem;
+        }
+        
+        @include respond(phone){
+            font-size: 4rem;
+        }
+        
+    }
+    
+    &__secondary{
+        
+    }
+    
+    &__page-title{
+        
+    }
+    
+    &__section-title{
+        
+    }
+    
+}
+
 /*TYPOGRAPHY*/
 h1,h2,h3,h4{
 	letter-spacing:1.4px;
 	text-align:left;
-}
-
-h1{
-	font-size:10vw;    
 }
 
 h2{

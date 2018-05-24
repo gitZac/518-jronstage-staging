@@ -79,6 +79,11 @@
 
 //CSSGRID
 
+.grid2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 .grid4{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
