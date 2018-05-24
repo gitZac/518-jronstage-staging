@@ -9,53 +9,14 @@
     font-style:normal;
 }
 
-
-
-
-
-
-
-
-
-
-.headline{
-    color:#000;
-}
-
-.headline:hover{
-    border-bottom: 2px solid #000;
-}
-
 /*TYPOGRAPHY*/
-/* 10px root size */
-
 h1,h2,h3,h4{
 	letter-spacing:1.4px;
 	text-align:left;
 }
 
-/*Main Banner*/
 h1{
-	font-size:10vw;
-}
-
-@media only screen and (min-width:800px) {
-	h1{
-		font-size:8rem;
-		font-size:80px;
-	}
-}
-
-/*Secondary Banner*/
-.secondary-banner h1{
-	font-size:7vw;
-}
-
-@media only screen and (min-width:920px) {
-	.secondary-banner h1{
-		font-size:6rem;
-		font-size:60px;
-	}
+	font-size:10vw;    
 }
 
 h2{
@@ -80,33 +41,4 @@ p{
 
 ol,ul{
 	list-style:none;
-	margin:0;
-	padding:0;
-}
-
-@media only screen and (min-width:767px) {	
-/* 	h2{
-		font-size:3.5rem;
-	}
-	
-	h3{	
-		font-size:2.5rem;
-	}
-	
-	h4{
-		font-size:2.0rem;
-	} */
-	
-	p, li{
-		font-size:1.6rem;
-	}
-
-}
-
-.l-page-title{
-}
-
-.l-page-title h2{
-	margin-top: 60px;
-	margin-bottom:20px;
 }

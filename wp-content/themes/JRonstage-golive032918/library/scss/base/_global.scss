@@ -2,21 +2,37 @@
 *,
 *:after,
 *:before {
-	-moz-box-sizing:border-box;
-	box-sizing:border-box;
+	-moz-box-sizing:inherit;
+	box-sizing:inherit;
 	-webkit-font-smoothing:antialiased;
 	font-smoothing:antialiased;
 	text-rendering:optimizeLegibility;
+    margin:0;
+    padding:0;
 }
 
 html {
-	font-size:10px;
+    // This defines what 1rem is
+    font-size: 62.5%; //10/16 .625 || 1rem = 10px
+
+    @include respond(tab-landscape){
+        font-size:56.25%;
+    }
+
+    @include respond(tab-port){
+        font-size:50%;
+    }
+
+    @include respond(big-desktop){
+        font-size:75%;
+    }
 }
 
 body {
 /* 	font:300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif; */
 	background-color:#fff;
 	font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
 }
 /* font-family: 'Oswald', sans-serif;
 font-family: 'Raleway', sans-serif;
@@ -32,20 +48,27 @@ img{
 
 /*LINKS */
 a{
-	color:#45A29E;
+	color:$colorLink;
 	text-decoration:none;
 	font-weight:bold;
 }
 
 a:hover {
-    border-bottom:2px solid #45A29E;
+    border-bottom:2px solid $colorLink;
 }
 
 .no-hover:hover{
-    border-bottom: none;
+    border-bottom: transparent;
 }
 
 .inherit{
     color:inherit;
     font-weight: inherit;
+}
+
+.preload{ //Prevents transitions from firing on load. Removed in main.js
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
 }
