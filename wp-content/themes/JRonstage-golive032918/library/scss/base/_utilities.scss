@@ -26,7 +26,7 @@
    color: $colorTextMuted;
 }
 
-.u-text-bold{
+.u-text-bold, .u-text-bold p{
     font-weight:700;
 }
 
@@ -50,6 +50,10 @@
 
 .e-image-scale img{
 	transform:scale(1.10);
+}
+
+.u-a-flxend{
+    align-self: flex-end;
 }
 
 .clear-fix{

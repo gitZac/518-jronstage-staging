@@ -1,17 +1,30 @@
 .card{
-    
-    &__group-title{
-            
+    p,li{
+        font-size: 1.8rem;
     }
-    
+        
     &__single{
         border-bottom: 1px solid #e5e5e5;
-        padding:2rem;
+        margin-bottom: 1rem;
+        overflow: hidden;
+        
+        @include respond(phone){
+            border-bottom: none;
+        }
+        
+        @include respond(phone){
+            max-width:40rem;
+        }
+
+    }
+    
+    &__single:last-child{
+        border-bottom: none;
     }
     
     &__single-title{
         text-align: left;
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
     
     &__single-title-link{
@@ -23,11 +36,18 @@
     }
     
     &__single-image{
-        overflow:hidden;
-        max-height: 25rem;
+        padding: 2rem 0;
+        
+        @include respond(phone){
+            padding:1rem 0;
+        }
     }
     
     &__single-details{
-        max-height: 25rem;
+        padding: 2rem 0;
+        
+        @include respond(phone){
+            padding:1rem 0;
+        }
     }
 }
