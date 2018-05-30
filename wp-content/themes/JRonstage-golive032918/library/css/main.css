@@ -17,9 +17,10 @@ background-image: repeating-linear-gradient(120deg, rgba(255, 255, 255, .1), rgb
   font-style: normal;
 }
 .header__main {
-  font-size: 9rem;
+  font-size: 8.5rem;
   margin-bottom: 0px;
   text-align: left;
+  text-shadow: 1px 0px 1px rgba(150, 150, 150, 1);
 }
 @media (max-width: 56.25em) {
   .header__main {
@@ -30,6 +31,15 @@ background-image: repeating-linear-gradient(120deg, rgba(255, 255, 255, .1), rgb
   .header__main {
     font-size: 4rem;
   }
+}
+.header__secondary {
+  text-shadow: 1px 0px 1px rgba(150, 150, 150, 1);
+}
+.header__page-title {
+  text-shadow: 1px 0px 1px rgba(150, 150, 150, 1);
+}
+.header__section-title {
+  text-shadow: 1px 0px 1px rgba(150, 150, 150, 1);
 }
 /*TYPOGRAPHY*/
 h1, h2, h3, h4 {
@@ -92,6 +102,10 @@ body {
 img {
   max-width: 100%;
   vertical-align: bottom;
+  border-radius: 0.2rem;
+  -webkit-box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.4);
 }
 /*LINKS */
 a {
@@ -134,7 +148,7 @@ a:hover {
   background-color: #47a39e;
 }
 .u-text-muted {
-  color: #7c7c7c;
+  color: #606060;
 }
 .u-text-bold, .u-text-bold p {
   font-weight: 700;
@@ -355,6 +369,10 @@ a img.aligncenter {
   background-image: none;
   text-transform: uppercase;
   font-size: 1.8rem;
+  border-radius: 0.2rem;
+  -webkit-box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.4);
   /* 	transition: background-color 0.4s, color 0.4s; */
 }
 .btn--master {
@@ -382,9 +400,6 @@ a img.aligncenter {
   color: #0b0c10;
   background-color: #53dbd1;
 }
-.card p, .card li {
-  font-size: 1.8rem;
-}
 .card__single {
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 1rem;
@@ -406,9 +421,12 @@ a img.aligncenter {
 .card__single-title {
   text-align: left;
   font-size: 2.8rem;
+  font-weight: 100;
+  text-shadow: 1px 0px 1px rgba(150, 150, 150, 1);
 }
 .card__single-title-link {
   color: #000;
+  font-weight: 100;
 }
 .card__single-title-link:hover {
   border-bottom: 2px solid #000;
@@ -428,6 +446,14 @@ a img.aligncenter {
   .card__single-details {
     padding: 1rem 0;
   }
+}
+.card__single-dates p, .card__single-prices p {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #606060;
+}
+.card__single-location {
+  font-size: 1.8rem;
 }
 .feature {
   background-repeat: no-repeat;
@@ -613,7 +639,7 @@ header {
   box-shadow: 0 2px 0 0 #000;
 }
 .hero__description {
-  color: #7c7c7c;
+  color: #606060;
   font-size: 1.8rem;
   padding: 2rem 0;
   max-width: 75%;

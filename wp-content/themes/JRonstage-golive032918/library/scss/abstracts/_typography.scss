@@ -12,10 +12,10 @@
 .header{
     
     &__main{
-        font-size:9rem;
-        
+        font-size:8.5rem;
         margin-bottom:0px;
         text-align:left;
+        text-shadow: 1px 0px 1px rgba(150, 150, 150, 1);
         
         @include respond(tab-port){
             font-size: 7rem;
@@ -28,14 +28,18 @@
     }
     
     &__secondary{ //For inside banner
-        
+        text-shadow: 1px 0px 1px rgba(150, 150, 150, 1);
+
     }
     
     &__page-title{
+        text-shadow: 1px 0px 1px rgba(150, 150, 150, 1);
+
         
     }
     
     &__section-title{
+        text-shadow: 1px 0px 1px rgba(150, 150, 150, 1);
         
     }
     
