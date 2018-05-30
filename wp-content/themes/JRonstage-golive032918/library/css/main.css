@@ -550,21 +550,47 @@ a img.aligncenter {
     background-size: 100%;
   }
 }
-footer {
-  margin-top: 20px;
-  padding: 20px;
+.footer {
+  padding: 8rem;
+  background-color: #1f2833;
 }
-.footer ul {
+.footer__menu-content ul {
   list-style: none;
 }
-.footer ul li {
-  padding: 3px;
+.footer__social-content {
+  padding: 5rem 0;
 }
-.footer ul li a {
-  color: #e8e8e8;
+.footer__copyright-content {
+  text-align: center;
+  color: #fff;
+  padding: 5rem 0;
 }
-.footer ul li a:hover {
-  border-bottom: 1px solid #fff;
+.footer__menu-content .menu-item a:link, .footer__menu-content .menu-item a:visited {
+  font-size: 1.4rem;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1.5rem;
+  display: block;
+  transition: all 0.2s;
+  background-color: rgba(255, 255, 255, .05);
+}
+.footer__menu-content .menu-item a:hover, .footer__menu-content .menu-item a:active {
+  background-color: rgba(255, 255, 255, .08);
+  transform: translateY(-3px);
+  border-bottom: transparent;
+}
+.footer__social-content .menu-item a:link, .footer__social-content .menu-item a:visited {
+  color: #fff;
+  display: block;
+  transition: all 0.2s;
+  background-color: transparent;
+}
+.footer__social-content .menu-item a:hover, .footer__social-content .menu-item a:active {
+  background-color: transparent;
+  transform: translateY(-3);
+  border-bottom: transparent;
 }
 .wpcf7 {
   background-color: #2d507c;
@@ -1029,6 +1055,15 @@ header .l-wrapper {
 }
 .padding100 {
   padding: 2rem;
+}
+.grid-auto {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-gap: 2rem;
+  align-items: center;
+}
+.grid-auto--short {
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 15rem));
 }
 .grid2 {
   display: grid;

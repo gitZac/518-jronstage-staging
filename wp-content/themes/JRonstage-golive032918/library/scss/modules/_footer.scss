@@ -1,20 +1,55 @@
-footer{
-	margin-top:20px;
-	padding:20px;
+.footer{
+    padding: 8rem;
+    background-color: $colorPrimary;
+    
+    &__menu-content{
+        ul{
+            list-style: none;
+        }
+    }
+    
+    &__social-content{
+        padding:5rem 0;
+    }
+    
+    &__copyright-content{
+        text-align: center;
+        color:#fff;
+        padding:5rem 0;
+    }
 }
 
-.footer ul{
-	list-style:none;
+.footer__menu-content .menu-item a:link,
+.footer__menu-content .menu-item a:visited{
+    font-size: 1.4rem;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1.5rem;
+    display: block;
+    transition: all .2s;
+    background-color: rgba(#fff, .05);
 }
 
-.footer ul li{
-	padding:3px;
+.footer__menu-content .menu-item a:hover,
+.footer__menu-content .menu-item a:active{
+    background-color: rgba(#fff, .08);
+    transform: translateY(-3px);  
+    border-bottom: transparent;
 }
 
-.footer ul li a{
-	color:#e8e8e8;
+.footer__social-content .menu-item a:link,
+.footer__social-content .menu-item a:visited{
+    color:#fff;
+    display: block;
+    transition: all .2s;
+    background-color: transparent;
 }
 
-.footer ul li a:hover{
-	border-bottom:1px solid #fff;
+.footer__social-content .menu-item a:hover,
+.footer__social-content .menu-item a:active{
+    background-color: transparent;
+    transform: translateY(-3);  
+    border-bottom: transparent;
 }

@@ -1,21 +1,13 @@
 <footer class="clear footer bg-primary" role="contentinfo">
-	<div class="l-wrapper l-grid1-3">			
-			
-		<div class="copyright-content">
-			<p class="copyright">
-				&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>
-			</p>
-		</div>
-		
-		<div class="menu-content">
-			<?php html5blank_footer(); ?>
-		</div>
-		
-		<div class="social-content">
-			<?php html5blank_footer_social(); ?>
-		</div>
-		
-	</div>
+    
+    <?php html5blank_footer(); ?>
+    <?php html5blank_footer_social(); ?>
+
+    <div class="footer__copyright-content">
+        <p class="copyright">
+            &copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>
+        </p>
+    </div>    	
 </footer>
 
 			<!-- /footer -->

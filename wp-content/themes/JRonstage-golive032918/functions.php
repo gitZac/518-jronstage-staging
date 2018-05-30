@@ -130,7 +130,7 @@ function html5blank_footer() {
 		'after'           => '',
 		'link_before'     => '',
 		'link_after'      => '',
-		'items_wrap'      => '<ul>%3$s</ul>',
+		'items_wrap'      => '<ul class="footer__menu-content grid-auto">%3$s</ul>',
 		'depth'           => 0,
 		'walker'          => ''
 		)
@@ -152,7 +152,7 @@ function html5blank_footer_social() {
 		'after'           => '',
 		'link_before'     => '',
 		'link_after'      => '',
-		'items_wrap'      => '<ul>%3$s</ul>',
+		'items_wrap'      => '<ul class="footer__social-content grid-auto grid-auto--short">%3$s</ul>',
 		'depth'           => 0,
 		'walker'          => ''
 		)

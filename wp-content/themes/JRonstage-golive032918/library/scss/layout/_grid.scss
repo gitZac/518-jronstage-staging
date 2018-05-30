@@ -79,6 +79,19 @@
 
 //CSSGRID
 
+.grid-auto{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-gap: 2rem;
+    align-items: center;
+    
+    &--short{
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 15rem));
+    }
+}
+
+
+
 .grid2{
     display: grid;
     grid-template-columns: 1fr 1fr;
