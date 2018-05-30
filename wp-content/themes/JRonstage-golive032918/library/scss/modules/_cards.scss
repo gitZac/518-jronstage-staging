@@ -24,6 +24,10 @@
         font-size: 2.8rem;
         font-weight: 100;
         text-shadow: 1px 0px 1px rgba(150, 150, 150, 1);
+        
+        &--sm{
+            font-size: 2.2rem;
+        }
     }
     
     &__single-title-link{
@@ -37,6 +41,10 @@
     
     &__single-image{
         padding: 2rem 0;
+        
+        &--mxh{
+            max-height: 30rem;
+        }
         
         @include respond(phone){
             padding:1rem 0;

@@ -29,8 +29,7 @@
                     
                     <div class="card__single-dates"><?php the_field('show_dates'); ?></div>
                     
-                    <div class="card__single-prices"><?php the_field('ticket_prices'); ?></div>
-                    
+                    <div class="card__single-prices"><?php the_field('ticket_prices'); ?></div>   
                 </div>
 
                 <div class="text-block u-a-flxend">

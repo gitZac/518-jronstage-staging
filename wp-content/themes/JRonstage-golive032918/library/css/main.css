@@ -111,7 +111,6 @@ img {
 a {
   color: #47a39e;
   text-decoration: none;
-  font-weight: bold;
 }
 a:hover {
   border-bottom: 2px solid #47a39e;
@@ -424,6 +423,9 @@ a img.aligncenter {
   font-weight: 100;
   text-shadow: 1px 0px 1px rgba(150, 150, 150, 1);
 }
+.card__single-title--sm {
+  font-size: 2.2rem;
+}
 .card__single-title-link {
   color: #000;
   font-weight: 100;
@@ -433,6 +435,9 @@ a img.aligncenter {
 }
 .card__single-image {
   padding: 2rem 0;
+}
+.card__single-image--mxh {
+  max-height: 30rem;
 }
 @media (max-width: 37.5em) {
   .card__single-image {
@@ -950,15 +955,11 @@ header .l-wrapper {
 .sidebar .blog-post:after {
   display: none;
 }
-.text-block {
-  font-size: 20px;
+.text-block__item {
+  font-size: 1.8rem;
 }
-.text-block--date {
-  text-align: left;
-}
-.text-block--date p {
-  font-weight: bold;
-  display: inline-block;
+.text-block__item--link {
+  font-size: 1.8rem;
 }
 .text-block p {
   margin: 1rem 0;
