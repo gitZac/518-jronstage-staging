@@ -46,13 +46,6 @@ h1, h2, h3, h4 {
   letter-spacing: 1.4px;
   text-align: left;
 }
-p, li {
-  font-size: 1.6rem;
-  line-height: 145%;
-}
-p {
-  max-width: 85%;
-}
 ol, ul {
   list-style: none;
 }
@@ -393,11 +386,11 @@ a img.aligncenter {
 .btn--secondary {
   font-weight: bold;
   color: #0b0c10;
-  background-color: #66fcf1;
+  background-color: #65fdf1;
 }
 .btn--secondary:hover {
   color: #0b0c10;
-  background-color: #53dbd1;
+  background-color: #65fdf1;
 }
 .card__single {
   border-bottom: 1px solid #e5e5e5;
@@ -560,10 +553,14 @@ a img.aligncenter {
 .footer__social-content {
   padding: 5rem 0;
 }
+.footer__social-content p, .footer__social-content li {
+  font-size: 1.8rem;
+}
 .footer__copyright-content {
   text-align: center;
   color: #fff;
   padding: 5rem 0;
+  font-size: 1.4rem;
 }
 .footer__menu-content .menu-item a:link, .footer__menu-content .menu-item a:visited {
   font-size: 1.4rem;
@@ -1064,6 +1061,7 @@ header .l-wrapper {
 }
 .grid-auto--short {
   grid-template-columns: repeat(auto-fit, minmax(10rem, 15rem));
+  justify-content: center;
 }
 .grid2 {
   display: grid;

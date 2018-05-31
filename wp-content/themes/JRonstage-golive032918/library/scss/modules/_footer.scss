@@ -10,12 +10,17 @@
     
     &__social-content{
         padding:5rem 0;
+        
+        p, li{
+            font-size: 1.8rem;
+        }
     }
     
     &__copyright-content{
         text-align: center;
         color:#fff;
         padding:5rem 0;
+        font-size: 1.4rem;
     }
 }
 

@@ -87,10 +87,9 @@
     
     &--short{
         grid-template-columns: repeat(auto-fit, minmax(10rem, 15rem));
+        justify-content: center;
     }
 }
-
-
 
 .grid2{
     display: grid;
