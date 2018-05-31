@@ -463,6 +463,7 @@ a img.aligncenter {
   position: relative;
   padding: 50px 50px;
   transition: background-size 0.5s;
+  min-height: 50rem;
 }
 .feature__content {
   display: table-cell;
@@ -470,9 +471,13 @@ a img.aligncenter {
   z-index: 2;
   color: rgba(255, 255, 255, 0.9);
   transition: color 0.5s ease-in-out;
+  font-size: 1.8rem;
 }
 .feature__content:hover {
   color: rgba(255, 255, 255, 1);
+}
+.feature__title {
+  font-size: 2.6rem;
 }
 .feature__info-group {
   display: block;

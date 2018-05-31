@@ -7,7 +7,7 @@
 	
 <?php $upcoming_shows = new WP_Query($args); while($upcoming_shows->have_posts()): $upcoming_shows->the_post(); ?>	
 
-<div id="feature" class="feature feature--text-white" style="background-image:url(<?php echo get_the_post_thumbnail_url(); ?>);">
+<div id="feature" class="feature" style="background-image:url(<?php echo get_the_post_thumbnail_url(); ?>);">
 	<div class="feature__content">
 	
 		<h2 class="feature__title"><?php the_title(); ?></h2>
@@ -23,7 +23,6 @@
 		</h3>
 		
 		<div class="feature__info-group">
-		    
             <p class="text-block">
                 Directed By: <span class="--modclass"><?php the_field('directed_by'); ?></span>
             </p>
@@ -34,8 +33,7 @@
 
             <p class="text-block">
                 <?php the_field('show_dates'); ?>
-            </p>		    
-		    
+            </p>		     
 		</div>
 	
 		<div class="feature__button-container">

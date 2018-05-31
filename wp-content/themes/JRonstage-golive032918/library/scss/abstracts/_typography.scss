@@ -10,11 +10,10 @@
 }
 
 .header{
-    
-    &__main{
+
+    &__main{ //h1
         font-size:8.5rem;
         margin-bottom:0px;
-        text-align:left;
         text-shadow: 1px 0px 1px rgba(150, 150, 150, 1);
         
         @include respond(tab-port){
@@ -24,21 +23,28 @@
         @include respond(phone){
             font-size: 4rem;
         }
+    }
+    
+    &__secondary{ //For inside banner h1
+        text-shadow: 1px 0px 1px rgba(150, 150, 150, 1);
+    }
+    
+    &__page-title{ //h2
+        text-shadow: 1px 0px 1px rgba(150, 150, 150, 1);
+    }
+    
+    &__section-title{ //h3
+        text-shadow: 1px 0px 1px rgba(150, 150, 150, 1);
+        font-size: 4rem;
+    }
+    
+    &__single-title{ //h4
+        font-size: 2.8rem;
         
+        &--small{
+            font-size:2rem;
+        }
     }
-    
-    &__secondary{ //For inside banner
-        text-shadow: 1px 0px 1px rgba(150, 150, 150, 1);
-    }
-    
-    &__page-title{
-        text-shadow: 1px 0px 1px rgba(150, 150, 150, 1);
-    }
-    
-    &__section-title{
-        text-shadow: 1px 0px 1px rgba(150, 150, 150, 1);        
-    }
-    
 }
 
 /*TYPOGRAPHY*/

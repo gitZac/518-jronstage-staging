@@ -5,7 +5,8 @@
 
 	<section class="section section--front l-wrapper l-wrapper--narrow">
 
-		<h2 class="section__title">Now Playing...</h2>	
+		<h2 class="section__title">Now Playing...</h2>
+			
 		<?php get_template_part('template-parts/feature-show'); ?>
 		
 		<h3 class="section__title--secondary">More Upcoming Shows</h3>	
