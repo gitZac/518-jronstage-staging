@@ -24,15 +24,19 @@
     }
     
     &__title{
-        font-size: 2.6rem;
+        font-size: 4rem;
+        margin:2rem 0;
     }
     
     &__info-group{
+        line-height:2.8rem;
         display:block;
+        margin:2rem 0;
     }
     
     &__button-container{
-      display:block;  
+        display:block;
+        margin:2rem 0;
     }
      
     &--text-white{
