@@ -41,10 +41,10 @@ background-image: repeating-linear-gradient(120deg, rgba(255, 255, 255, .1), rgb
   text-shadow: 1px 0px 1px rgba(150, 150, 150, 1);
   font-size: 4rem;
 }
-.header__single-title {
+.header__single {
   font-size: 2.8rem;
 }
-.header__single-title--small {
+.header__single--small {
   font-size: 2rem;
 }
 /*TYPOGRAPHY*/
@@ -830,6 +830,59 @@ header .l-wrapper {
   border: 1px solid #fff;
   background-color: #fff;
 }
+.servo-box {
+  background-color: rgba(255, 255, 255, .8);
+  font-size: 1.5rem;
+  text-align: center;
+  border-radius: 0.2rem;
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s;
+  position: relative;
+}
+.servo-box:hover {
+  transform: translateY(-0.5rem) scale(1.01);
+}
+.servo-box__photo {
+  background-blend-mode: overlay;
+  background-size: cover;
+  height: 23rem;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 73%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+}
+.servo-box__title {
+  position: absolute;
+  top: 15rem;
+  right: 2rem;
+  text-align: right;
+  font-size: 2.6rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #fff;
+  width: 75%;
+}
+.servo-box__title-span {
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  padding: 0.2rem 1.5rem;
+  background-image: linear-gradient(to right bottom, rgba(101, 253, 241, .85), rgba(45, 80, 124, .85));
+}
+.servo-box__details {
+  padding: 3rem;
+}
+.servo-box__details ul {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+.servo-box__details ul li {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}
+.servo-box__details a {
+  padding: 1rem;
+}
 .my-services {
   overflow: hidden;
 }
@@ -1006,11 +1059,6 @@ header .l-wrapper {
   max-width: 114rem;
   margin: 0 auto;
 }
-@media (max-width: 56.25em) {
-  .row {
-    max-width: 50rem;
-  }
-}
 .row:not(:last-child) {
   margin-bottom: 1rem;
 }
@@ -1019,44 +1067,50 @@ header .l-wrapper {
     margin-bottom: 1rem;
   }
 }
+@media (max-width: 56.25em) {
+  .row {
+    max-width: 50rem;
+    padding: 0 3rem;
+  }
+}
 .row::after {
   content: "";
   display: table;
   clear: both;
 }
-.row [class^="col"] {
+.row [class^="col-"] {
   float: left;
 }
-@media (max-width: 56.25em) {
-  .row [class^="col"] {
-    width: 100% !important;
-  }
-}
-.row [class^="col"]:not(:last-child) {
+.row [class^="col-"]:not(:last-child) {
   margin-right: 6rem;
 }
 @media (max-width: 56.25em) {
-  .row [class^="col"]:not(:last-child) {
+  .row [class^="col-"]:not(:last-child) {
     margin-right: 0;
     margin-bottom: 1rem;
   }
 }
-.row .col1-of-2 {
-  width: calc(( 100% - 6rem ) /2);
+@media (max-width: 56.25em) {
+  .row [class^="col-"] {
+    width: 100% !important;
+  }
 }
-.row .col1-of-3 {
-  width: calc((100% - 2 * 6rem) /3);
+.row .col-1-of-2 {
+  width: calc((100% - 6rem) / 2);
 }
-.row .col2-of-3 {
+.row .col-1-of-3 {
+  width: calc((100% - 2 * 6rem) / 3);
+}
+.row .col-2-of-3 {
   width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem);
 }
-.row .col1-of-4 {
-  width: calc((100% - 3 * 6rem ) /4);
+.row .col-1-of-4 {
+  width: calc((100% - 3 * 6rem) / 4);
 }
-.row .col2-of-4 {
+.row .col-2-of-4 {
   width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem);
 }
-.row .col3-of-4 {
+.row .col-3-of-4 {
   width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem);
 }
 .bg-red {
@@ -1109,10 +1163,6 @@ header .l-wrapper {
 .l-grid-feature {
   display: grid;
   grid-template-columns: 1fr 3fr;
-}
-.l-grid-services {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
 }
 @media only screen and (min-width: 1000px) {
   .l-grid-main {

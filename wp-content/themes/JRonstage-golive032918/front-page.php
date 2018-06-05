@@ -19,9 +19,8 @@
 	</section>
 
 	<section class="section section--front">
-	
 		<div class="l-wrapper">
-			<h2 class="section-title">My Services</h2>
+			<h2 class="section__title">My Services</h2>
 			<?php get_template_part('template-parts/front-page-sections/fp-hire'); ?>
 		</div>
 	</section>
@@ -43,56 +42,56 @@
     <section class="grid-test">
 
         <div class="row">
-            <div class="col1-of-2 bg-green padding100">
+            <div class="col-1-of-2 bg-green padding100">
                 Column One of Two
             </div>
-            <div class="col1-of-2 bg-green padding100">
+            <div class="col-1-of-2 bg-green padding100">
                 Column One of Two
             </div>
         </div>
 
         <div class="row">
-            <div class="col1-of-3 bg-green padding100">
+            <div class="col-1-of-3 bg-green padding100">
                 Column One of three
             </div>
-            <div class="col1-of-3 bg-green padding100">
+            <div class="col-1-of-3 bg-green padding100">
                 Column One of three
             </div>
 
-            <div class="col1-of-3 bg-green padding100">
+            <div class="col-1-of-3 bg-green padding100">
                 Column One of three
             </div>
         </div>
 
         <div class="row">
-            <div class="col2-of-3 bg-green padding100">
+            <div class="col-2-of-3 bg-green padding100">
                 Column two of three
             </div>
 
-            <div class="col1-of-3 bg-green padding100">
+            <div class="col-1-of-3 bg-green padding100">
                 Column One of three
             </div>
         </div>
 
         <div class="row">
-            <div class="col1-of-4 bg-green padding100">
+            <div class="col-1-of-4 bg-green padding100">
                 Column One of four
             </div>
 
-            <div class="col1-of-4 bg-green padding100">
+            <div class="col-1-of-4 bg-green padding100">
                 Column One of four
             </div>
-            <div class="col2-of-4 bg-green padding100">
+            <div class="col-2-of-4 bg-green padding100">
                 Column two of four
             </div>
         </div>
 
         <div class="row">
-            <div class="col1-of-4 bg-green padding100">
+            <div class="col-1-of-4 bg-green padding100">
                 Column One of four
             </div>
 
-            <div class="col3-of-4 bg-green padding100">
+            <div class="col-3-of-4 bg-green padding100">
                 Column Three of four
             </div>
         </div>

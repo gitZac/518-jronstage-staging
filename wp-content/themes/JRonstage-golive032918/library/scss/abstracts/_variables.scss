@@ -6,6 +6,13 @@ $colorLink:#47a39e;
 
 $colorTextDark:#0B0C10;
 $colorTextLight:#fff;
+
+//Gray Scale
+$colorWhite:#fff;
+$colorGrayLight:#e8e8e8;
+$colorGrayMid:#999;
+$colorGrayDark:#606060;
+
 $colorTextMuted:#606060;
 
 $colorPrimary:#1F2833;
@@ -13,12 +20,15 @@ $colorPrimaryLight:#65fdf1;
 $colorPrimaryMid:#47a39e;
 $colorPrimaryDark:#2d507c;
 
+$colorSecondaryRed:#DB2B39;
+
+
 // GRID
 
 $grid-width:114rem;
 $grid-gutter-vertical:1rem;
 
-$grid-gutter-vertical--small:1rem;
+$grid-gutter-vertical-small:1rem;
 $grid-gutter-horizontal:6rem;
 
 //font-sizes
