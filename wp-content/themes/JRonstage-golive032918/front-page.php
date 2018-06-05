@@ -27,18 +27,25 @@
 
 	<section class="section section--front l-wrapper">
 		
-		<h2 class="section-title">Contact J.R.</h2>
+		<h2 class="section__title">Contact J.R.</h2>
 		
-		<div class="col1-2">
-			<?php get_template_part('template-parts/bio'); ?>
-		</div>	
-		
-		<div class="col1-2">
-			<?php echo do_shortcode( '[contact-form-7 id="97" title="Contact form 1"]' ); ?>	
+		<div class="row">
+		    
+            <div class="col-1-of-2">
+                <?php get_template_part('template-parts/bio'); ?>
+            </div>	
+
+            <div class="col-1-of-2">
+                <?php echo do_shortcode( '[contact-form-7 id="97" title="Contact form 1"]' ); ?>	
+            </div>   
+             
 		</div>
+		
+
 
 	</section>
 	
+<!--
     <section class="grid-test">
 
         <div class="row">
@@ -96,6 +103,7 @@
             </div>
         </div>
     </section>
+-->
 	
 </main>
 <?php get_footer(); ?>
