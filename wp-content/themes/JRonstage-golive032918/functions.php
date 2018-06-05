@@ -84,7 +84,7 @@ function html5blank_nav() {
 		'after'           => '',
 		'link_before'     => '',
 		'link_after'      => '',
-		'items_wrap'      => '<ul class="main-nav-items">%3$s</ul>',
+		'items_wrap'      => '<ul class="main-nav__items">%3$s</ul>',
 		'depth'           => 0,
 		'walker'          => ''
 		)
@@ -107,7 +107,7 @@ function html5blank_social_nav() {
 		'after'           => '',
 		'link_before'     => '',
 		'link_after'      => '',
-		'items_wrap'      => '<ul class="social-items">%3$s</ul>',
+		'items_wrap'      => '<ul class="social-bar__items">%3$s</ul>',
 		'depth'           => 0,
 		'walker'          => ''
 		)

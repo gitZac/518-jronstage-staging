@@ -26,7 +26,7 @@
 	
 <body <?php body_class(); ?>>
 
-	<header class="" role="banner ">
+	<header class="header" role="banner ">
         
         <div class="social-bar">
            
@@ -38,11 +38,11 @@
 		
 		<div class="l-wrapper">
            
-            <div class="mobile-nav">
-                <a href="#" class="mobile-icon"><i class="fa fa-bars"></i>Menu</a>
+            <div class="header__mobile-nav">
+                <a href="#" class="header__mobile-nav--burgernav"><i class="fa fa-bars"></i>Menu</a>
             </div>
             
-            <nav class="main-nav" role="navigation">
+            <nav class="main-nav -main-nav" role="navigation">
                 <?php html5blank_nav();?>
             </nav>
 			
