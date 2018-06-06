@@ -14,8 +14,10 @@
 
 	</section>
 
-	<section id="twain" class="section section--front section--feature section--feature-no-tb-padding" style="background-image:url(<?php echo get_stylesheet_directory_uri(); ?>/img/white-wash.jpg);">
+	<section id="twain" class="section section--front" style="background-image:linear-gradient(to right bottom, rgba(235,235,235,0.8), rgba(199,199,199,0.8)), url(<?php echo get_stylesheet_directory_uri(); ?>/img/white-wash.jpg);">
+	
 		<?php get_template_part('template-parts/twain-feature'); ?>
+		
 	</section>
 
 	<section class="section section--front">
@@ -41,8 +43,6 @@
              
 		</div>
 		
-
-
 	</section>
 	
 <!--

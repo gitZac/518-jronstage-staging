@@ -1,3 +1,35 @@
+//MARGIN
+.u-no-tb-margin{
+    margin-top:0 !important;
+    margin-bottom:0 !important;
+}
+
+.u-tb-margin-20{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.u-t-margin-50{
+    margin-top:5rem;
+}
+//PADDING
+
+
+
+//DISPLAY
+.u-d-iblock{
+    display: inline-block;
+}
+
+.u-a-flxend{
+    align-self: flex-end;
+}
+
+.clear-fix{
+	clear:both;
+}
+
+//COLOR
 .u-color-primary{
     color:$colorPrimary;
 }
@@ -30,10 +62,6 @@
     font-weight:700;
 }
 
-.u-d-iblock{
-    display: inline-block;
-}
-
 .background-fade{
 	background-color:#aac2ce;
 }
@@ -50,12 +78,4 @@
 
 .e-image-scale img{
 	transform:scale(1.10);
-}
-
-.u-a-flxend{
-    align-self: flex-end;
-}
-
-.clear-fix{
-	clear:both;
 }

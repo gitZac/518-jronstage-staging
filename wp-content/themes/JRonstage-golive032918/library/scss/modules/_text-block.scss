@@ -1,5 +1,39 @@
 .text-block{ //For embedded text styles
+    padding:0 2rem;    
+    &--promo{
+        font-size: 1.8rem;
+        line-height: 145%;
+    }
+    
+    &__title{
+            
+        &--promo{
+            font-size: 3.5rem;
+            margin: 2rem 0;
+            line-height: 145%;
+
+        }
+        
+    }
+    
+    &__tagline{
+        
+        &--promo{
+            font-size: 2.5rem;
+            margin:2rem 0;
+            
+            line-height: 145%;
+
+        }
+    }
+    
+    &__text{
+        
+    }
+    
+    
     &__item{
+        
         font-size: 1.8rem;
         
         &--link{
@@ -10,6 +44,5 @@
 
     & p{
         margin: 1rem 0;
-    }
-    
+    }   
 }
