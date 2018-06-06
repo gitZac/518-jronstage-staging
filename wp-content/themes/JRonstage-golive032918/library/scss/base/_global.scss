@@ -56,10 +56,6 @@ a{
 	text-decoration:none;
 }
 
-a:hover {
-    border-bottom:2px solid $colorLink;
-}
-
 .no-hover:hover{
     border-bottom: transparent;
 }

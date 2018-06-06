@@ -20,7 +20,7 @@
 				<li class="hero__list-item"><span class="hero__list-item-bullet"> Coach</span></li>
 			</ul>
 			
-			<p class="hero__description">Louisville Ky., Southern Indiana-based Actor, Director and coach.</p>
+			<p class="hero__description">Acting, directing and coaching services in Louisville, Kentucky and Southern Indiana.</p>
 			
 			<div class="hero__btn-container">
 			    <a href="<?php echo get_page_link(7); ?>" class="btn btn--secondary btn--master">READ MORE</a>

@@ -14,27 +14,28 @@
 		<h2 class="feature__title"><?php the_title(); ?></h2>
 		
 		<h3 class="feature__theater">
-		    
-		    <a class="feature__theatre-link" target="_blank" href="<?php the_field('theater_link'); ?>">
+		    <div class="text-block">
+                <a class="feature__theatre-link" target="_blank" href="<?php the_field('theater_link'); ?>">
 		        <span class="feature__theater-link"><?php the_field('us-theater'); ?></span> 
-		    </a> 
-		    
-		    <span class="feature__location"> - <?php the_field('location'); ?></span>
+                </a> 
+
+                <span class="feature__location"> - <?php the_field('location'); ?></span>        
+            </div>
+
 		
 		</h3>
 		
 		<div class="feature__info-group">
-            <p class="text-block">
+            <div class="text-block">
                 Directed By: <span class="--modclass"><?php the_field('directed_by'); ?></span>
-            </p>
+            </div>
 
-            <p class="text-block">
+            <div class="text-block">
                 Written By: <span class="--modclass"><?php the_field('written_by'); ?></span>
-            </p>
-
-            <p class="text-block">
+                
                 <?php the_field('show_dates'); ?>
-            </p>		     
+            </div>
+		     
 		</div>
 	
 		<div class="feature__button-container">

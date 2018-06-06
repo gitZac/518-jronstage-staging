@@ -17,7 +17,7 @@
          <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 
          <p><?php the_content(); ?></p>
-         <a href="<?php echo the_permalink(); ?>" class="butt butt-primary">Learn More</a>
+         <a class="btn--text" href="<?php echo the_permalink(); ?>" class="butt butt-primary">Learn More</a>
        </div>
      </li>
 

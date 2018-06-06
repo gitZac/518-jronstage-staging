@@ -46,7 +46,7 @@
         
         <div class="l-wrapper">
            
-            <nav class="main-nav -main-nav" role="navigation">
+            <nav class="main-nav" role="navigation">
                <?php html5blank_nav();?>
             </nav>
             

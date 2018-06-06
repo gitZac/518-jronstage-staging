@@ -11,6 +11,10 @@
 
 .u-t-margin-50{
     margin-top:5rem;
+    
+    @include respond(tab-port){
+        margin-top: 0;
+    }
 }
 //PADDING
 
@@ -42,6 +46,8 @@
    color:$colorPrimaryMid;
 }
 
+
+
 .u-bgcolor-primary{
     background-color:$colorPrimary;
 }
@@ -54,9 +60,11 @@
     background-color:$colorPrimaryMid;
 }
 
-.u-text-muted{
-   color: $colorTextMuted;
+.u-bgcolor-graylight{
+    background-color: $colorGrayLight;
 }
+
+
 
 .u-text-bold, .u-text-bold p{
     font-weight:700;

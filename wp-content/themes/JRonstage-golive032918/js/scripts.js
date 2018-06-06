@@ -10,7 +10,7 @@
 			$('.main-nav').slideToggle('slow');
 		 });
 		
-		var breakpoint = 900;
+		var breakpoint = 700;
 		
 		$(window).resize(function() {
 			if ($(document).width() <= breakpoint) {
@@ -18,7 +18,6 @@
 
 			} else{
                 $('.main-nav').show();
-
 			}		 
 		});
 				

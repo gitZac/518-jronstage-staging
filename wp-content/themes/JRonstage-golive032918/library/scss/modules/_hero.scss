@@ -4,6 +4,7 @@
     background-size: 7rem 10.2rem;
 	overflow:hidden;
     color:#fff;
+    margin-bottom: 4rem;
 
     &--banner{
         
@@ -51,16 +52,15 @@
     }
     
     &__description{
-        color:$colorTextMuted;
+        color:$colorGrayMid;
         font-size:1.8rem;
+        padding: 2rem 0;
         
         @include respond(phone){
             
             display:none;
         }
         
-        padding: 2rem 0;
-        max-width:75%;
     }
     
     &__btn-container{

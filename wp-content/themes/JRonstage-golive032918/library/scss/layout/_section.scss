@@ -16,6 +16,7 @@ aside{
 }
 
 .section{
+    margin-bottom:4rem;
     overflow:hidden;
  
     &--front{
@@ -23,11 +24,12 @@ aside{
     }
     
     &__title{
-        margin: 4rem 0;
+        margin-bottom:4rem;
         font-size:4rem;
         
-        @include respond(phone){
+        @include respond(tab-port){
             font-size: 3rem;
+            text-align: center;
         }
     }
     

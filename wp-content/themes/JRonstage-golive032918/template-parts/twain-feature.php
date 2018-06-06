@@ -7,10 +7,18 @@
 
 	<?php $twain_feature = new WP_Query($args); while($twain_feature->have_posts()): $twain_feature->the_post(); ?>	
 
-        <div class="row u-no-tb-margin">
+        <div class="row">
            
             <div class="col-1-of-2">
                
+                <div class="feature-image">
+                    <?php the_post_thumbnail(); ?>
+                </div>              
+
+            </div>
+            
+            <div class="col-1-of-2">
+   
                 <div class="text-block text-block--promo u-t-margin-50">
                    
                     <h2 class="text-block__title--promo"><?php the_title(); ?></h2>
@@ -24,13 +32,7 @@
                         <br>
                         <a class="btn--text u-tb-margin-20" href="<?php echo get_page_link(122);  ?>">Find out how</a>
                     </p>
-	            </div>
-            </div>
-            
-            <div class="col-1-of-2">
-                <div class="feature-image">
-                    <?php the_post_thumbnail(); ?>
-                </div>   
+	            </div>   
             </div>
             
         </div> <!--END ROW-->

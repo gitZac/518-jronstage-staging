@@ -27,7 +27,7 @@
               
               <?php the_field('servo-list') ?>
                 
-              <a href="<?php the_permalink(); ?>"> Learn More</a>
+              <a class="btn--text" href="<?php the_permalink(); ?>"> Learn More</a>
             </div>
         
         </div>
