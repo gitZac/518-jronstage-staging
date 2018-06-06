@@ -4,9 +4,12 @@
     
     &__mobile-nav{
         padding:20px 0;
-        display:block;
+        display:none;
         text-align:center;
         
+        @include respond(tab-port){
+            display:block;
+        }
         
         &--burgernav{
             font-size:25px;

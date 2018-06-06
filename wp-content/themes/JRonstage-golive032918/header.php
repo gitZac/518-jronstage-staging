@@ -42,10 +42,14 @@
                 <a href="#" class="header__mobile-nav--burgernav"><i class="fa fa-bars"></i>Menu</a>
             </div>
             
+        </div>
+        
+        <div class="l-wrapper">
+           
             <nav class="main-nav -main-nav" role="navigation">
-                <?php html5blank_nav();?>
+               <?php html5blank_nav();?>
             </nav>
-			
-		</div>
+            
+        </div>
 		
 	</header>

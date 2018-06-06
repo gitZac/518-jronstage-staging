@@ -1,23 +1,40 @@
 .main-nav{
-    display:block;
+    display: block;
+    padding:4rem 0;
+    
+    @include respond(tab-port){
+        padding:0;
+    }
     
     &__items{
-        margin:25px 0;
-        display:inline-block;
+        display:table;
+        
+        @include respond(tab-port){
+            display:block;
+        }
     }
         
     &__items li{
-        display:inline-block;
-        height: 60%;
-        line-height: 15px; 
+        text-transform:uppercase;
+        display:table-cell;
+        line-height: 1.5rem;
+        font-size: 1.6rem;
+        padding:2rem;
+        border-right:1px solid #45a29E;
+        font-weight:700;
+        
+        @include respond(tab-port){
+            display: block;
+            text-align: center;
+            border-right: none;
+        }
     }
 
     &__items li a{
-        padding: 24px 35px 24px 35px;	
-        border-right:1px solid #45a29E;
-        font-weight:700;
         color:#0b0c10;
-        text-transform:uppercase;
+        @include respond(tab-port){
+            border-right: none;
+        }
     }
 
     &__items li a:hover{

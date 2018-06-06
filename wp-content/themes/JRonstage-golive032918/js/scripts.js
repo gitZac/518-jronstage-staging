@@ -6,18 +6,19 @@
 		
 		// DOM ready, take it away
 		
-		$('.mobile-nav a').on('click', function(){
+		$('.header__mobile-nav a').on('click', function(){
 			$('.main-nav').slideToggle('slow');
 		 });
 		
-		var breakpoint = 1190;
+		var breakpoint = 900;
 		
 		$(window).resize(function() {
-			if ($(document).width() >= breakpoint) {
-
-				$('.main-nav').show();
-			} else{
+			if ($(document).width() <= breakpoint) {
 				$('.main-nav').hide();
+
+			} else{
+                $('.main-nav').show();
+
 			}		 
 		});
 				
@@ -26,12 +27,6 @@
 				$(this).toggleClass('active');
 			});			
 		});
-				
-		
-		
-		
-		
-		
-		
+						
 	});	
 })(jQuery, this);
