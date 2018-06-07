@@ -60,8 +60,6 @@
 
 }
 
-
-
 //for testing
 
 .bg-red{
@@ -153,54 +151,15 @@
     }
 }
 
-
-//OLD CODE TO BE REFACTORED
-
-
-.l-main-banner-grid{
-	display:grid;
-	grid-template-columns: 1fr 1fr;
+.grid-3fr-1fr{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    
+    @include respond(phone-land){
+        grid-template-columns: 1fr;
+    }
 }
 
-.l-secondary-banner-grid{
-	display:grid;
-	grid-template-columns: 3fr 1fr;
-}
-
-.l-grid-feature{
-	display:grid;
-	grid-template-columns:1fr 3fr;
-}
-
-@media only screen and (min-width:768px) {	
-	.l-grid1-2{
-		display:grid;
-		grid-template-columns: 1fr 1fr;
-	}
-	.l-grid1-3{
-		display:grid;
-		grid-template-columns:repeat(3, 1fr);
-	}
-
-	.l-grid1-4{
-		display:grid;
-		grid-template-columns: repeat(4, 1fr);
-	}
-	
-	.l-grid-offset1-2{
-		display:grid;
-		grid-template-columns:1.5fr 2fr;
-		grid-gap:1em;
-	}
-	
-	.l-grid-feature{
-		display:block;
-	}
-	
-	.l-grid-services{
-		grid-template-columns:repeat(2, 1fr);
-	}
-} 
 
 /* COLUMNS */
 

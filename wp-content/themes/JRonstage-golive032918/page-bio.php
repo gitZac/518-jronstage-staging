@@ -3,6 +3,7 @@
     Template Name: Bio
   */
 ?><?php get_header(); ?>
+
 <?php get_template_part('template-parts/secondary-banner'); ?>
 
 <div class="l-page-title l-wrapper">
@@ -13,11 +14,10 @@
 	
 	<main class="main" role="main">
 	
-	    <div class="section section--inside bio">
+	    <section class="section section--inside bio">
             <?php get_template_part('template-parts/bio');?>
-	    </div>
+	    </section>
 		
-
 		<section class="section section--inside">
 			<?php get_template_part('template-parts/roles'); ?>
 		</section>
