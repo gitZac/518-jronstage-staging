@@ -7,6 +7,7 @@
  
 <?php $services = new WP_Query($args); while($services->have_posts()): $services->the_post(); ?>
 <a href="<?php  the_permalink()?>">
+    
      <div class=" servo-box servo-box--small" style="background-image:url(<?php echo get_the_post_thumbnail_url(); ?>);");>
 
         <h4 class="servo-box__title">
