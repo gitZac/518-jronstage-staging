@@ -11,20 +11,24 @@
 
 <div class="l-wrapper l-grid-main">
 	
-	<main class="l-primary-w" role="main">
+	<main class="main" role="main">
+	
+	    <div class="section section--inside bio">
+            <?php get_template_part('template-parts/bio');?>
+	    </div>
 		
-		<?php get_template_part('template-parts/bio');?>
 
-		<section class="section">
+		<section class="section section--inside">
 			<?php get_template_part('template-parts/roles'); ?>
 		</section>
 		
-		<section class="section">
+		<section class="section section--inside">
 			<?php get_template_part('template-parts/resume'); ?>
 		</section>
 	
 	</main>
 	
 	<?php get_sidebar(); ?>
+	
 </div>
 <?php get_footer(); ?>

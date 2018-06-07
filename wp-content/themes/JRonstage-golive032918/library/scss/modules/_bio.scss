@@ -3,8 +3,13 @@
     
     &__image{
         float:left;
-        margin:1em;
+        margin:2rem;
         width:25rem;
+        
+        &--small{
+            width:20rem;
+            margin-right:1rem;
+        }
     }
 
     &__image img{
@@ -16,13 +21,23 @@
     }
 
     &__content{
-        margin-right:25px;
-        margin-bottom:25px;
+        margin-right:2.5rem;
+        margin-bottom:2.5rem;
         font-size: 1.6rem;
         line-height: 145%;
         
-        p{
+        &--small{
+            margin:0;
+            font-size: 1.4rem;
+        }
+    }
+        
+    &__content p{
             margin: 1rem 0;
+            max-width: 95%;
+            
+            @include respond (tab-port){
+                max-width: 75%;
         }
     }
 }

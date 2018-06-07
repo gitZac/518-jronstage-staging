@@ -1,4 +1,56 @@
 .card{
+    
+    &--stacked{
+                
+        &__single{
+            margin: 1rem 0;
+            padding-bottom:1.5rem;
+            border-radius: .2rem;
+            box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.4);
+            background-color: $colorGraySuperLight;
+        }
+        
+        &__image{
+            max-height:25rem;
+            overflow:hidden;            
+        }
+        
+        &__image img{
+            width:100%;
+            padding:0;
+        }
+        
+        &__text{
+            display: block;
+            font-size: 1.4rem;
+            line-height: 145%;
+            width:80%;
+            margin: 0 auto;
+            margin-bottom: 2rem;
+        }
+        
+        &__text p{
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        
+        &__title{
+            margin:1rem 0;
+            font-size: 2rem;
+            line-height: 145%;
+            text-align: center;
+        }
+        
+        &__links{
+         text-align: center;   
+        }
+        
+        &__links a{
+            font-size: 1.4rem;
+            margin-right: 1rem;
+        }
+        
+    }
         
     &__single{
         border-bottom: 1px solid #e5e5e5;

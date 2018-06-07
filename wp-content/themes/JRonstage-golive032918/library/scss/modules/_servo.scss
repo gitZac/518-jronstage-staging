@@ -6,7 +6,17 @@
     box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.4);
     transition: transform .3s;
     position: relative;
-   
+    
+    &--small{
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position:center top;
+        width:100%;
+        position:relative;
+        min-height:27.5rem;
+        margin:1rem 0;
+        
+    }
    
     &:hover{
         transform: translateY(-0.1rem) scale(1.01);    
@@ -14,7 +24,6 @@
     
     &__photo{
         background-blend-mode: overlay;
-
         background-size: cover;
         height:23rem;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 73%, 0% 100%);
@@ -43,74 +52,44 @@
     
     &__details{
         padding:3rem;
-        ul{
-            width:80%;
-            margin:0 auto;
-            margin-bottom: 1rem;
-            
-            li{
-                text-align: center;
-                font-size: 1.5rem;
-                padding:1rem;
-                border-bottom: 1px solid #eee;
-            }
-            
-        }
-        
-        a{
-            padding:1rem;
-        }
-        
+    }
+    
+    &__details ul{
+        width:80%;
+        margin:0 auto;
+        margin-bottom: 1rem;        
+    }
+    
+    &__details li{
+        text-align: center;
+        font-size: 1.5rem;
+        padding:1rem;
+        border-bottom: 1px solid #eee;  
+    }
+    
+    &__details a{
+        padding:1rem;
 
     }
-
-}
-
-.my-services{
-	overflow:hidden;
 }
 
 .services-items{
-  background-repeat:no-repeat;
-  background-size:cover;
-  background-position:center top;
-  width:100%;
-  position:relative;
-  color:rgba(255,255,255,0.5);
-  min-height:275px;
-  border:1px solid #e8e8e8;
-  padding: 20px 20px;
-  transition:color 0.5s ease-in-out, background-size 0.5s;
+
 }
 
 .services-items:hover{
 	color:rgba(255,255,255,1);
 }
 
- .services-title{
-	text-align:center;
-	margin:0;
-	color:rgba(255,255,255,1);
-}
-
-.services-title:after{
-	background:#45A29E;
-	content: "";
-	display: block;
-	height: 3px;
-	margin: 0.75em auto;
-	width: 25%;
-}
-
 .services-items::after{
-	content:"";
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  background-color:rgba(0,0,0,.5);
-	transition:background-color 0.5s linear;
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,.5);
+    transition:background-color 0.5s linear;
 }
 
 .services-items:hover::after{
@@ -135,29 +114,4 @@
 
 .sidebar .services-items:hover{
 	background-size:130%;
-}
-
-.sidebar .services-items-text{
-	padding: 5px 0;
-}
-
-.sidebar .services-items-text p{
-	max-width:100%;
-	font-size:1.4rem;
-}
-
-@media only screen and (min-width:767px) {
-	.services-items-text p{
-		margin:0 auto;
-	}
-}
-
-@media only screen and (min-width:960px){
-    .services-items{
-		background-size:102%;
-	}
-	
-	.services-items:hover{
-		background-size:100%;
-	}
 }

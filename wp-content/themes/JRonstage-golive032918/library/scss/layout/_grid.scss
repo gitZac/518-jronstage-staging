@@ -78,6 +78,16 @@
 
 //CSSGRID
 
+.l-grid-main{
+    display:grid;
+    grid-template-columns: 2fr 0.9fr;
+    grid-gap: 3rem;
+    
+    @include respond(tab-port){
+        grid-template-columns: 1fr;
+    }
+}
+
 .grid-auto{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
@@ -160,13 +170,6 @@
 .l-grid-feature{
 	display:grid;
 	grid-template-columns:1fr 3fr;
-}
-
-@media only screen and (min-width:1000px) {
-	.l-grid-main{
-		display:grid;
-		grid-template-columns: 2fr 0.9fr;
-	}
 }
 
 @media only screen and (min-width:768px) {	

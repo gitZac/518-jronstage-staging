@@ -5,8 +5,8 @@
     'order' => 'ASC',
 ); ?>
 
-
 <div class="row">
+    
      <?php $services = new WP_Query($args); while($services->have_posts()): $services->the_post(); ?>
      
     <div class="col-1-of-3">
@@ -37,5 +37,3 @@
       <?php endwhile; wp_reset_postdata(); ?>
 
 </div>
-
-
