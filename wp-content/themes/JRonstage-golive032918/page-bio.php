@@ -6,15 +6,16 @@
 
 <?php get_template_part('template-parts/secondary-banner'); ?>
 
-<div class="l-page-title l-wrapper">
-	<h2><?php wp_title(''); ?></h2>
+<div class="l-wrapper">
+	<h2 class="header__page-title"><?php wp_title(''); ?></h2>
 </div>
 
 <div class="l-wrapper l-grid-main">
 	
 	<main class="main" role="main">
 	
-	    <section class="section section--inside bio">
+	    <section class="section section--inside bio"> 
+     
             <?php get_template_part('template-parts/bio');?>
 	    </section>
 		
@@ -31,4 +32,5 @@
 	<?php get_sidebar(); ?>
 	
 </div>
+
 <?php get_footer(); ?>

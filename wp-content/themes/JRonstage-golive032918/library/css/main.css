@@ -35,7 +35,8 @@ background-image: repeating-linear-gradient(120deg, rgba(255, 255, 255, .1), rgb
   text-shadow: 1px 0px 1px rgba(150, 150, 150, 1);
 }
 .header__page-title {
-  text-shadow: 1px 0px 1px rgba(150, 150, 150, 1);
+  font-size: 4rem;
+  margin-bottom: 2rem;
 }
 .header__section-title {
   text-shadow: 1px 0px 1px rgba(150, 150, 150, 1);
@@ -328,7 +329,7 @@ a img.aligncenter {
 }
 .banner__header {
   font-size: 6rem;
-  text-align: center;
+  text-align: left;
 }
 .banner__list-item {
   display: inline-block;
@@ -559,8 +560,9 @@ a img.aligncenter {
 }
 .card__single {
   border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 1rem;
   overflow: hidden;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 @media (max-width: 37.5em) {
   .card__single {
@@ -571,9 +573,6 @@ a img.aligncenter {
   .card__single {
     max-width: 40rem;
   }
-}
-.card__single:last-child {
-  border-bottom: none;
 }
 .card__single-title {
   text-align: left;
@@ -592,9 +591,6 @@ a img.aligncenter {
 .card__single-title-link:hover {
   border-bottom: 2px solid #000;
 }
-.card__single-image {
-  padding: 2rem 0;
-}
 .card__single-image--mxh {
   max-height: 30rem;
 }
@@ -602,9 +598,6 @@ a img.aligncenter {
   .card__single-image {
     padding: 1rem 0;
   }
-}
-.card__single-details {
-  padding: 2rem 0;
 }
 @media (max-width: 37.5em) {
   .card__single-details {
@@ -906,6 +899,14 @@ a img.aligncenter {
   border: 1px solid #fff;
   background-color: #fff;
 }
+.resume {
+  font-size: 1.6rem;
+  line-height: 165%;
+}
+.resume h3, .resume h4, .resume p {
+  margin-bottom: 1rem;
+  max-width: 75%;
+}
 .servo-box {
   background-color: rgba(255, 255, 255, .8);
   font-size: 1.5rem;
@@ -1023,9 +1024,6 @@ a img.aligncenter {
   line-height: 145%;
 }
 .text-block__item {
-  font-size: 1.8rem;
-}
-.text-block__item--link {
   font-size: 1.8rem;
 }
 .text-block p {
@@ -1170,6 +1168,10 @@ footer .l-grid1-3 {
     text-align: center;
   }
 }
+.section__title--inner {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
 .section__title--secondary {
   margin: 4rem 0;
   font-size: 3rem;
@@ -1223,7 +1225,7 @@ footer .l-grid1-3 {
   display: none;
 }
 .l-wrapper {
-  max-width: 110rem;
+  max-width: 120rem;
   margin: 0 auto;
   overflow: hidden;
   padding: 0 2rem;

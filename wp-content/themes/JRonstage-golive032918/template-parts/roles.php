@@ -1,6 +1,9 @@
+
 <div class="card">
    
-   <div class="card__group-container">
+    <h3 class="section__title--inner"><?php the_field('featured_roles_title') ?></h3>
+
+    <div class="card__group-container">
        
         <?php $args = array(
             'post_type' => 'best_roles',							
@@ -10,8 +13,8 @@
         ); ?>
         
       <?php $roles = new WP_Query($args); while($roles->have_posts()): $roles->the_post(); ?>
-
-    
+        
+                
         <div class="card__single grid2 grid2--1col-phone">
            
            <div class="card__single-image card__single-image--mxh">
@@ -30,7 +33,7 @@
                 <p class="text-block__item"><span class="u-text-muted u-text-bold ">Run: </span><?php the_field('year'); ?></p>
                 <p class="text-block__item"><span class="u-text-muted u-text-bold ">Company: </span><?php the_field('company'); ?></p> 
                 
-                <a class="text-block__item--link u-text-bold" href="<?php the_permalink(); ?>"><?php ?>Read More</a> 
+                <a class="btn--text" href="<?php the_permalink(); ?>"><?php ?>Read More</a> 
                                                                      
               </div>
             
@@ -39,6 +42,7 @@
         </div>
     
         <?php endwhile; wp_reset_postdata(); ?>
+        
    </div>
     
 </div>
