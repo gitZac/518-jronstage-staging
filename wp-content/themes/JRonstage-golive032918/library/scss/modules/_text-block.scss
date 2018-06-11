@@ -1,5 +1,15 @@
 .text-block{ //For embedded text styles
-        line-height: 2.6rem;
+    line-height: 145%;
+    font-size: 1.6rem;
+    max-width: 85%;
+
+    
+    &--intro{
+        color:$colorGrayDark;
+        font-weight: bold;
+        line-height: 145%;
+        font-size: 1.6rem;
+    }
 
     &--promo{
         font-size: 1.8rem;
@@ -13,7 +23,6 @@
             margin: 2rem 0;
             line-height: 145%;
         }
-        
     }
     
     &__tagline{
@@ -25,18 +34,11 @@
         }
     }
     
-    &__text{
-        
-    }
-    
-    
-    &__item{
-        
+    &__item{    
         font-size: 1.8rem;
-        
     }
 
-    & p{
+    p{
         margin: 1rem 0;
     }   
 }

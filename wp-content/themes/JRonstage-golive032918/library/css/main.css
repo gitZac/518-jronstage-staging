@@ -35,8 +35,8 @@ background-image: repeating-linear-gradient(120deg, rgba(255, 255, 255, .1), rgb
   text-shadow: 1px 0px 1px rgba(150, 150, 150, 1);
 }
 .header__page-title {
-  font-size: 4rem;
-  margin-bottom: 2rem;
+  font-size: 3.5rem;
+  margin-bottom: 3rem;
 }
 .header__section-title {
   text-shadow: 1px 0px 1px rgba(150, 150, 150, 1);
@@ -158,6 +158,15 @@ a {
 }
 .u-color-primary-mid {
   color: #47a39e;
+}
+.u-color-gray-light {
+  color: #e8e8e8;
+}
+.u-color-gray-mid {
+  color: #999;
+}
+.u-color-gray-dark {
+  color: #606060;
 }
 .u-bgcolor-primary {
   background-color: #1f2833;
@@ -337,7 +346,7 @@ a img.aligncenter {
   margin-right: 1rem;
 }
 .banner__bullet::before {
-  background-color: #45a29e;
+  background-color: #65fdf1;
   content: "";
   display: inline-block;
   margin: 2px;
@@ -387,11 +396,11 @@ a img.aligncenter {
 }
 .bio__content p {
   margin: 1rem 0;
-  max-width: 95%;
+  max-width: 60rem;
 }
 @media (max-width: 56.25em) {
   .bio__content p {
-    max-width: 75%;
+    max-width: 50rem;
   }
 }
 /*    border-bottom: 2px solid #e5e5e5;*/
@@ -716,7 +725,7 @@ a img.aligncenter {
 }
 .wpcf7 .field {
   margin-bottom: 20px;
-  width: 100%;
+  max-width: 85%;
 }
 .wpcf7 input, .wpcf7 textarea {
   width: 100%;
@@ -787,7 +796,7 @@ a img.aligncenter {
   }
 }
 .hero__list-item-bullet:before {
-  background-color: #45a29e;
+  background-color: #65fdf1;
   content: "";
   display: inline-block;
   margin: 0.2rem;
@@ -905,7 +914,7 @@ a img.aligncenter {
 }
 .resume h3, .resume h4, .resume p {
   margin-bottom: 1rem;
-  max-width: 75%;
+  max-width: 60rem;
 }
 .servo-box {
   background-color: rgba(255, 255, 255, .8);
@@ -1007,7 +1016,15 @@ a img.aligncenter {
   color: #e8e8e8;
 }
 .text-block {
-  line-height: 2.6rem;
+  line-height: 145%;
+  font-size: 1.6rem;
+  max-width: 85%;
+}
+.text-block--intro {
+  color: #606060;
+  font-weight: bold;
+  line-height: 145%;
+  font-size: 1.6rem;
 }
 .text-block--promo {
   font-size: 1.8rem;
@@ -1148,15 +1165,16 @@ a img.aligncenter {
 footer .l-grid1-3 {
   justify-items: center;
 }
-/*This query has to coincide with main-grid.*/
-@media only screen and (min-width: 1000px) {
-  aside {
-    width: 100%;
-  }
-}
 .section {
   margin-bottom: 4rem;
   overflow: hidden;
+}
+.section__image {
+  margin-bottom: 3rem;
+}
+.section__image img {
+  max-width: 85%;
+  max-height: 50rem;
 }
 .section__title {
   margin-bottom: 4rem;

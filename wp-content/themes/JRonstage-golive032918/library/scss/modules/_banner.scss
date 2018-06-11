@@ -27,7 +27,7 @@
     
     &__bullet{
         &::before{
-            background-color: #45a29E;
+            background-color: $colorPrimaryLight;
             content: "";
             display: inline-block;
             margin: 2px;

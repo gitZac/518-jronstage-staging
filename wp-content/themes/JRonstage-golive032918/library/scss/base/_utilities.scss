@@ -18,8 +18,6 @@
 }
 //PADDING
 
-
-
 //DISPLAY
 .u-d-iblock{
     display: inline-block;
@@ -46,7 +44,17 @@
    color:$colorPrimaryMid;
 }
 
+.u-color-gray-light{
+    color:$colorGrayLight;
+}
 
+.u-color-gray-mid{
+    color:$colorGrayMid;
+}
+
+.u-color-gray-dark{
+    color:$colorGrayDark
+}
 
 .u-bgcolor-primary{
     background-color:$colorPrimary;
@@ -63,8 +71,6 @@
 .u-bgcolor-graylight{
     background-color: $colorGrayLight;
 }
-
-
 
 .u-text-bold, .u-text-bold p{
     font-weight:700;

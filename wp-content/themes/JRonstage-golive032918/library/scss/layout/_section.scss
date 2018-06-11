@@ -1,20 +1,13 @@
-@media only screen and (min-width:1000px) {
-	/*This query has to coincide with main-grid.*/
-	aside{
-		width:100%;
-	}
-}
-
 .section{
     margin-bottom:4rem;
     overflow:hidden;
- 
-    &--front{
-
-    }
     
-    &--inside{
-        
+    &__image{
+        margin-bottom: 3rem;
+        img{
+            max-width: 85%;
+            max-height: 50rem;
+        }
     }
     
     &__title{

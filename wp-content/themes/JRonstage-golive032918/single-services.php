@@ -1,33 +1,40 @@
 <?php get_header(); ?>
 <?php get_template_part('template-parts/secondary-banner'); ?>
 
-<div class="l-page-title l-wrapper">
-	<h2><?php wp_title(''); ?></h2>
+<div class="l-wrapper">
+	<h2 class="header__page-title"><?php wp_title(''); ?></h2>
 </div>
 
 <div class="l-wrapper l-grid-main">
 	
-	<main class="" role="main">
+	<main class="main" role="main">
 		<?php while (have_posts()) : the_post(); ?>
 
-			<section class="">
-				<div class="blog-image">
+			<section class="section">
+				
+				<div class="section__image">
 					<?php the_post_thumbnail(); ?>
 				</div>
-				<?php the_content(); ?>
-				<p><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a></p>
+				
+				<div class="text-block">
+                    <?php the_content(); ?>
+				</div>
 
 			</section>
 			
-			<section>
-				<h3>Contact J.R.</h3>
-				<?php echo do_shortcode( '[contact-form-7 id="97" title="Contact form 1"]' ); ?>
-				<p><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a></p>
+			<section class="section">
+				
+                <h3 class="section-title--inner">Contact J.R.</h3>
+                <?php echo do_shortcode( '[contact-form-7 id="97" title="Contact form 1"]' ); ?>
+                
+                <a class="btn--text" href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a>
+
 			</section>
 		
 		<?php endwhile; ?>
 
-	</main>	
+	</main>
+		
   <?php get_template_part('template-parts/sidebar-no-services'); ?>
 
 </div>

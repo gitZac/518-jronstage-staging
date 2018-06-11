@@ -34,10 +34,10 @@
         
     &__content p{
             margin: 1rem 0;
-            max-width: 95%;
+            max-width: 60rem;
             
             @include respond (tab-port){
-                max-width: 75%;
+                max-width: 50rem;
         }
     }
 }
