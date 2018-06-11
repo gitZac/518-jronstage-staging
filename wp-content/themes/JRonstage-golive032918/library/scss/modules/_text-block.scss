@@ -2,7 +2,10 @@
     line-height: 145%;
     font-size: 1.6rem;
     max-width: 85%;
-
+    
+    &--full-width{
+        max-width: 70%;
+    }
     
     &--intro{
         color:$colorGrayDark;
@@ -37,8 +40,38 @@
     &__item{    
         font-size: 1.8rem;
     }
+    
+    &__info-bar{
+        color:$colorGrayMid;
+        font-weight: bold;
+
+        p{
+            display:inline;
+        }
+    }
 
     p{
         margin: 1rem 0;
-    }   
+    }
+}
+
+.title-text-image{
+    &__title{
+        text-align:left !important;
+        margin:10px 0;
+        font-size: 2.2rem;
+    }
+    
+    &__text{
+        font-size: 1.4rem;
+        line-height: 145%;        
+    }
+    
+    &__image{
+        
+    }
+}
+
+.size-medium{
+    width:30rem;
 }

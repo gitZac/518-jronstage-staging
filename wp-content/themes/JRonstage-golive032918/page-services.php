@@ -14,7 +14,7 @@
 	<main role="main">
 	
         <section class="section">
-            <div class="text-block">
+            <div class="text-block text-block--full-width">
                 <?php the_content(); ?>
             </div>
         </section>

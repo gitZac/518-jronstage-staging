@@ -51,6 +51,7 @@
         color:$colorGrayMid;
         font-size:1.8rem;
         padding: 2rem 0;
+        max-width: 85%;
         
         @include respond(phone){
             

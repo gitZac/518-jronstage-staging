@@ -1,7 +1,7 @@
 .sidebar{
  	margin:0 auto;
-	max-width:70%;
-	min-width:350px;
+	max-width:40rem;
+	min-width:35rem;
     
     &__widget-container{
         margin-bottom:2rem;
@@ -24,29 +24,10 @@
         font-size: 2.4rem;
         text-align: center;
     }
-}
-
-/* SIDEBAR */
-
-.sidebar .blog-content h3{
-    text-align:left !important;
-    margin:10px 0;
-    line-height: 1em;
-}
-
-.sidebar .blog-image{
-	max-height:250px;
-}
-
-.sidebar .blog-image img{
-	width:100%;
-}
-
-.sidebar .blog-content, .sidebar .bio-content-excerpt{
-	font-size:1.4rem;
-	line-height:140%;
-}
-
-.sidebar .blog-post:after{
-  display:none;
+    
+    &__content-block{
+        text-align:left !important;
+        margin:10px 0;
+        line-height: 1em;       
+    }
 }

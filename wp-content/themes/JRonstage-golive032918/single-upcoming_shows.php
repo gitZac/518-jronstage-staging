@@ -18,8 +18,13 @@
 				</div>
 				
 				<div class="text-block">
-                    <p class="u-color-gray-mid"><?php the_field('us-theater'); ?> | <?php the_field('show_dates'); ?></p> 
-                
+                   
+                   <div class="text-block__info-bar">
+                       
+                        <a target="_blank" href="<?php the_field('theater_link'); ?>"><?php the_field('us-theater'); ?></a> | <?php the_field('show_dates'); ?>
+                         
+                   </div>
+                   
                     <?php the_content(); ?>
                     
                     <p><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a></p>

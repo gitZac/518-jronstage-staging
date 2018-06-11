@@ -11,7 +11,7 @@
            
             <div class="col-1-of-2">
                
-                <div class="feature-image">
+                <div class="u-tb-padding-40">
                     <?php the_post_thumbnail(); ?>
                 </div>              
 

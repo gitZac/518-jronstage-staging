@@ -17,7 +17,7 @@
 	</div>
 	
 	<div class="sidebar__widget-container">
-		
+	
 		<?php get_template_part('template-parts/sidebar_queries/bio_sidebar'); ?>
 		
 	</div>

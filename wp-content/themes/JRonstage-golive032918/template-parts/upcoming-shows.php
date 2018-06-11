@@ -25,7 +25,7 @@
                 <div class="text-block">
                     <h4 class="card__single-title"><a class="card__single-title-link" href="<?php the_permalink();?>"><?php the_title(); ?></a></h4>
                   
-                    <p class="card__single-location"><a href="<?php the_field('theater_link'); ?>"><?php the_field('us-theater'); ?></a></p>
+                    <p class="card__single-location"><a target="_blank" href="<?php the_field('theater_link'); ?>"><?php the_field('us-theater'); ?></a></p>
                     
                     <div class="card__single-dates"><?php the_field('show_dates'); ?></div>
                     

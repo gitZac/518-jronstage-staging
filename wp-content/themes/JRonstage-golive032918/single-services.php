@@ -24,7 +24,7 @@
 			
 			<section class="section">
 				
-                <h3 class="section-title--inner">Contact J.R.</h3>
+                <h3 class="section__title--inner">Contact J.R.</h3>
                 <?php echo do_shortcode( '[contact-form-7 id="97" title="Contact form 1"]' ); ?>
                 
                 <a class="btn--text" href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a>
@@ -35,7 +35,7 @@
 
 	</main>
 		
-  <?php get_template_part('template-parts/sidebar-no-services'); ?>
+  <?php get_template_part('template-parts/sidebar-secondary'); ?>
 
 </div>
 <?php get_footer(); ?>
