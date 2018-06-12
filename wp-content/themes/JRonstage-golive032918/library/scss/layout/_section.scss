@@ -1,9 +1,11 @@
 .section{
+    
     margin-bottom:4rem;
     overflow:hidden;
     
     &__image{
         margin-bottom: 3rem;
+        
         img{
             max-width: 85%;
             max-height: 50rem;
@@ -11,26 +13,14 @@
     }
     
     &__title{
-        margin-bottom:4rem;
-        font-size:4rem;
-        
-        @include respond(tab-port){
-            font-size: 3rem;
-            text-align: center;
-        }
+       margin-bottom:4rem;
         
         &--inner{
-            font-size: 3rem;
             margin-bottom: 2rem;
         }
     }
     
     &__title--secondary{
         margin:4rem 0;
-        font-size:3rem;
-        
-        @include respond(phone){
-            font-size: 2.5rem;
-        }
     }
 }

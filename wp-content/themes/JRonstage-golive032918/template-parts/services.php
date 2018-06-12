@@ -1,27 +1,39 @@
-<div class="my-services">
-    <?php $args = array(
-      'post_type' => 'services',							
-      'posts_per_page' => -1,							
-      'orderby' => 'title',
-      'order' => 'ASC',
-    ); ?>
- <ul>
+<?php $args = array(
+    'post_type' => 'services',							
+    'posts_per_page' => 3,							
+    'orderby' => 'title',
+    'order' => 'ASC',
+); ?>
 
-   <?php $services = new WP_Query($args); while($services->have_posts()): $services->the_post(); ?>
+<div class="row">
+    
+     <?php $services = new WP_Query($args); while($services->have_posts()): $services->the_post(); ?>
+     
+    <div class="col-1-of-3">
 
-     <li class="col1-2 services-items">
-       <div>
-        <?php the_post_thumbnail('services-image'); ?>
-       </div>
-       <div>
-         <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-
-         <p><?php the_content(); ?></p>
-         <a class="btn--text" href="<?php echo the_permalink(); ?>" class="butt butt-primary">Learn More</a>
-       </div>
-     </li>
-
-  <?php endwhile; wp_reset_postdata(); ?>
- </ul>
+        <div class="servo-box">
+           
+            <div class="servo-box__photo " style=" background-image:url(<?php echo get_the_post_thumbnail_url(); ?>);">
+                &nbsp;
+            </div>
+            
+            <h4 class="servo-box__title">
+               <span class="servo-box__title-span">
+                    <?php the_title(); ?>
+               </span>
+            </h4>
+            
+            <div class="servo-box__details">
+              
+              <?php the_field('servo-list') ?>
+                
+              <a class="btn--text" href="<?php the_permalink(); ?>"> Learn More</a>
+            </div>
+        
+        </div>
+        
+    </div>
+    
+      <?php endwhile; wp_reset_postdata(); ?>
 
 </div>

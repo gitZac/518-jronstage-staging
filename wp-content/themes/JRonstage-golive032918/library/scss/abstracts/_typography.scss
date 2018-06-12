@@ -9,9 +9,32 @@
     font-style:normal;
 }
 
+html {
+    font-size: 62.5%; //10/16 .625 || 1rem = 10px
+
+    @include respond(tab-landscape){
+        font-size:56.25%;
+    }
+
+    @include respond(tab-port){
+        font-size:50%;
+    }
+
+    @include respond(big-desktop){
+        font-size:75%;
+    }
+}
+
+h1,h2,h3,h4{
+	letter-spacing:1.4px;
+}
+
+//*****************HEADER-TEXT****************************
+
 .header{
 
-    &__main{ //h1
+    &__main{ //h1 Front Page
+        
         font-size:8.5rem;
         margin-bottom:0px;
         text-shadow: 1px 0px 1px rgba(150, 150, 150, 1);
@@ -23,37 +46,383 @@
         @include respond(phone){
             font-size: 4rem;
         }
+        
     }
     
-    &__secondary{ //For inside banner h1
-        text-shadow: 1px 0px 1px rgba(150, 150, 150, 1);
-    }
-    
-    &__page-title{ //h2
+    &__page-title{ //h2 -- inside pages
         font-size: 3.5rem;
         margin-bottom: 3rem;
     }
     
-    &__section-title{ //h3
-        text-shadow: 1px 0px 1px rgba(150, 150, 150, 1);
-        font-size: 4rem;
+    //REFACTOR
+    
+//    &__section{
+//        font-size: 3rem;
+//    }
+//    
+//    &__section--front{
+//        font-size:4rem;
+//        
+//        @include respond(tab-port){
+//            font-size: 3rem;
+//            text-align: center;
+//        }
+//    }
+//    
+//    &__section--secondary{
+//        font-size:3rem;
+//        
+//        @include respond(phone){
+//            font-size: 2.5rem;
+//        }    
+//    }
+    
+    //END REFACTOR
+}
+
+//*******************SECTION****************************
+
+.section{ 
+    
+    &__title{
+        font-size:4rem;
+        
+        @include respond(tab-port){
+            font-size: 3rem;
+            text-align: center;
+        }
+        
+        &--inner{
+            font-size: 3rem;
+        }
     }
     
-    &__single{ //h4
+    &__title--secondary{
+        font-size:3rem;
+        
+        @include respond(phone){
+            font-size: 2.5rem;
+        }
+    } 
+}
+
+//*******************SIDEBAR****************************
+
+.sidebar{
+    
+    &__widget-title{
+        font-size: 2.2rem;
+        text-align: center;
+    }
+    
+    &__content-block{
+        text-align:left !important;
+        line-height: 145%;       
+    }
+}
+
+//*******************BANNER****************************
+
+.banner{
+    
+    &__header{
+        font-size: 6rem;
+        text-align: left;
+    }
+    
+    &__list{
+
+    }
+    
+    &__list-item{
         font-size: 2.8rem;
+    }
+}
+
+//*******************BIO/ABOUT****************************
+
+.bio{
+    &__content{
+        font-size: 1.6rem;
+        line-height: 145%;
         
         &--small{
-            font-size:2rem;
+            font-size: 1.4rem;
         }
     }
 }
 
-/*TYPOGRAPHY*/
-h1,h2,h3,h4{
-	letter-spacing:1.4px;
-	text-align:left;
+//*******************BUTTON****************************
+
+.btn{
+    font-size:1.8rem;
+    line-height: 145%;
+    
+    &--master{ //For more prominent hero or jumbo components.
+        font-size: 2rem;
+        
+        @include respond(phone){
+            font-size: 1.6rem;
+        }
+    }
+    
+    &--text{
+        font-size: 1.6rem;
+        font-weight:bold;
+        text-decoration: none;
+    }
 }
 
-ol,ul{
-	list-style:none;
+//*******************WP-EXCERPT OVERRIDE****************************
+
+.view-article{
+    font-size: 1.4rem;
+    font-weight:bold;
+    text-decoration: none;
+}
+
+//*******************CARDS****************************
+
+.card{
+    
+    &--stacked{
+        
+        &__text{
+            font-size: 1.4rem;
+            line-height: 145%;
+            width:80%;
+        }
+
+        &__text p{
+            text-align: center;
+        }
+
+        &__title{
+            font-size: 2rem;
+            line-height: 145%;
+            text-align: center;   
+        }
+
+        &__links{
+            text-align: center;       
+        }
+
+        &__links a{
+            font-size: 1.4rem;
+        }
+    }
+    
+    &__single-title{
+        text-align: left;
+        font-size: 2.8rem;
+        font-weight: 100;
+        line-height: 145%;
+        
+        &--sm{
+            font-size: 2.2rem;
+        }
+    }
+    
+    &__single-title-link{
+        font-weight: 100;        
+    }
+    
+    &__single-dates p, &__single-prices p{
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+    
+    &__single-location{
+        font-size: 1.8rem;
+    }
+}
+
+//*******************FEATURE****************************
+
+.feature{
+    
+    &__content{
+        font-size: 1.8rem;
+    }
+    
+    &__title{
+        font-size: 4rem;
+    }
+}
+
+//*******************FOOTER****************************
+
+.footer{
+    &__social-content{
+        
+        p, li{
+            font-size: 1.8rem;
+        }
+    }
+    
+    &__copyright-content{
+        text-align: center;
+        font-size: 1.4rem;
+    }
+}
+
+.footer__menu-content .menu-item a:link,
+.footer__menu-content .menu-item a:visited{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    text-align: center; 
+}
+
+//*******************FORM****************************
+
+.wpcf7{
+    font-size: 1.6rem;
+}
+
+//*******************HEADER NAV****************************
+
+.header{
+    
+    &__mobile-nav{
+        text-align:center;
+        
+        &--burgernav{
+            font-size:2.5rem;
+        }  
+    }
+}
+
+//*******************HERO****************************
+
+.hero{
+    &__list-item{
+        font-size: 4rem;
+        
+        @include respond(tab-port){
+            font-size: 3rem;
+        }
+        
+        @include respond(phone){
+            font-size: 2rem;
+        }
+    }
+    
+    &__description{
+        font-size:1.8rem;
+        max-width: 85%;
+    }
+}
+
+//*******************MAIN-NAV****************************
+
+.main-nav{
+    
+    &__items li{
+        line-height: 145%;
+        font-size: 1.6rem;
+        font-weight:700;
+        text-align: center;
+        
+        @include respond(phone-land){
+            text-align: center;
+        }
+    }  
+}
+
+//*******************RESUME****************************
+
+.resume{
+    font-size: 1.6rem;
+    line-height: 145%;    
+}
+
+//*******************SERVO******************************
+
+.servo-box{
+    font-size: 1.6rem;
+    text-align: center;
+
+    &__title{
+        text-align: right;
+        font-size: 2.6rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        width:75%;
+    }
+    
+    &__details li{
+        text-align: center;
+        font-size: 1.6rem;  
+    }   
+}
+
+//*******************SOCIAL BAR******************************
+
+.social-bar{
+    
+    &__items li{
+        line-height: 145%;
+        font-size: 2.2rem;
+        text-align:center;
+    }
+}
+
+//*******************TEXT-BLOCK******************************
+
+.text-block{ //For embedded text styles
+    line-height: 145%;
+    font-size: 1.6rem;
+    max-width: 85%;
+    
+    &--full-width{
+        max-width: 70%;
+    }
+    
+    &--intro{
+        font-weight: bold;
+        line-height: 145%;
+        font-size: 1.6rem;
+    }
+
+    &--promo{
+        font-size: 1.8rem;
+        line-height: 145%;
+    }
+    
+    &__title{
+            
+        &--promo{
+            font-size: 3.5rem;
+            line-height: 145%;
+        }
+    }
+    
+    &__tagline{
+        
+        &--promo{
+            font-size: 2.5rem;
+            line-height: 145%;
+        }
+    }
+    
+    &__item{    
+        font-size: 1.8rem;
+    }
+    
+    &__info-bar{
+        font-weight: bold;
+    }
+}
+
+.title-text-image{
+    
+    &__title{
+        text-align:left !important;
+        font-size: 2.2rem;
+    }
+    
+    &__text{
+        font-size: 1.4rem;
+        line-height: 145%;        
+    }
 }

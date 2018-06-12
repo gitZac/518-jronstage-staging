@@ -19,12 +19,8 @@
         text-transform:uppercase;
         display:table-cell;
         width:1%;
-        text-align: center;
         vertical-align: middle;
         border-right: 2px solid $colorPrimaryMid;
-        line-height: 2.2rem;
-        font-size: 1.6rem;
-        font-weight:700;
         padding:0 1rem;
         
         &:last-child{
@@ -33,7 +29,6 @@
         
         @include respond(phone-land){
             display: block;
-            text-align: center;
             border-right: none;
             width: auto;
             padding: 1rem 0;

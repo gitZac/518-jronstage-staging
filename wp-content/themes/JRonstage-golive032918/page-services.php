@@ -14,13 +14,17 @@
 	<main role="main">
 	
         <section class="section">
+            
             <div class="text-block text-block--full-width">
                 <?php the_content(); ?>
             </div>
+            
         </section>
 
         <section class="section">
-          <?php get_template_part('template-parts/front-page-sections/fp-hire'); ?>			
+         
+          <?php get_template_part('template-parts/services'); ?>
+          			
         </section>
 	
 	</main>

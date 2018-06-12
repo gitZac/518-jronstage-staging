@@ -5,14 +5,9 @@
     &__mobile-nav{
         padding:20px 0;
         display:none;
-        text-align:center;
         
         @include respond(phone-land){
             display:block;
-        }
-        
-        &--burgernav{
-            font-size:2.5rem;
         }
         
         &--burgernav i{

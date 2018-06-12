@@ -11,23 +11,6 @@
     padding:0;
 }
 
-html {
-    // This defines what 1rem is
-    font-size: 62.5%; //10/16 .625 || 1rem = 10px
-
-    @include respond(tab-landscape){
-        font-size:56.25%;
-    }
-
-    @include respond(tab-port){
-        font-size:50%;
-    }
-
-    @include respond(big-desktop){
-        font-size:75%;
-    }
-}
-
 body {
 /* 	font:300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif; */
 	background-color:#fff;
@@ -50,10 +33,18 @@ img{
     box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.4);
 }
 
+.size-medium{
+    width:30rem;
+}
+
 /*LINKS */
 a{
-	color:$colorLink;
+	color:$colorPrimaryMid;
 	text-decoration:none;
+}
+
+ol,ul{
+	list-style:none;
 }
 
 .no-hover:hover{

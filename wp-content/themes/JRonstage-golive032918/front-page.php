@@ -20,7 +20,7 @@
 	<section class="section section--front">
 		<div class="l-wrapper">
 			<h2 class="section__title">My Services</h2>
-			<?php get_template_part('template-parts/front-page-sections/fp-hire'); ?>
+			<?php get_template_part('template-parts/services'); ?>
 		</div>
 	</section>
 	
@@ -35,6 +35,7 @@
 	</section>
 
 	<section class="section section--front l-wrapper">
+       
         <div class="l-wrapper">
 
             <h2 class="section__title">Contact J.R.</h2>
